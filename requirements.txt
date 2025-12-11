@@ -1,0 +1,36 @@
+# APK Decompiler CLI - Python Dependencies
+# Python 3.9+ required
+
+# Core dependencies
+click>=8.1.0
+colorama>=0.4.6
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# Android-related tools
+androguard>=3.4.0a1
+pycryptodome>=3.18.0
+
+# File handling
+lxml>=4.9.0
+
+# Data processing
+requests>=2.31.0
+
+# Logging
+python-json-logger>=2.0.7
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-mock>=3.11.1
+
+# Code quality
+black>=23.0.0
+flake8>=6.0.0
+isort>=5.12.0
+mypy>=1.5.0
+pylint>=3.0.0
+
+# Development
+python-dotenv>=1.0.0
