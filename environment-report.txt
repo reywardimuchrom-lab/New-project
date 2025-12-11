@@ -1,0 +1,35 @@
+APK Decompiler CLI - Environment Report
+Generated on: Thu Dec 11 08:11:46 UTC 2025
+========================================
+
+System Information:
+OS: Linux
+Architecture: x86_64
+Kernel: 6.12.60
+
+Python Information:
+Python 3.12.3
+/usr/bin/python3
+pip version: pip 24.0 from /usr/lib/python3/dist-packages/pip (python 3.12)
+
+Java Information:
+scripts/validate-env.sh: line 288: java: command not found
+JAVA_HOME: Not set
+
+Environment Variables:
+PATH: /usr/local/share/bun/bin:/usr/local/share/bun/bin:/home/engine/.local/bin:/home/engine/.local/bin/:/home/engine/.nvm/versions/node/v20.19.6/bin:/home/engine/.npm-global/bin:/usr/local/share/bun/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ANDROID_HOME: Not set
+VIRTUAL_ENV: Not set
+
+Installed Tools:
+apktool: Not found
+jadx: Not found
+aapt: Not found
+adb: Not found
+
+Project Configuration Files:
+requirements.txt: Present
+pyproject.toml: Present
+.gitignore: Present
+.env.example: Present
+Makefile: Present

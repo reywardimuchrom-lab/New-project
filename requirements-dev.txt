@@ -1,0 +1,4 @@
+# Additional development dependencies
+pre-commit>=2.20.0
+tox>=4.0.0
+coverage[toml]>=7.0.0
