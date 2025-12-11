@@ -1,0 +1,128 @@
+version: '3.8'
+
+services:
+  apk-decompiler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: apk-decompiler-cli
+    
+    # Environment variables
+    environment:
+      - DEBUG=false
+      - LOG_LEVEL=INFO
+      - OUTPUT_DIR=/app/decompiled
+      - TEMP_DIR=/app/temp
+      - KEEP_TEMP_FILES=false
+      - JADX_MAX_MEMORY=4096
+      - JADX_THREADS=4
+    
+    # Volume mounts
+    volumes:
+      - ./decompiled:/app/decompiled
+      - ./temp:/app/temp
+      - ./cache:/app/cache
+      - ./logs:/app/logs
+      - ./input:/app/input
+      - ./output:/app/output
+    
+    # Working directory
+    working_dir: /app
+    
+    # Interactive shell
+    stdin_open: true
+    tty: true
+    
+    # Network
+    network_mode: bridge
+    
+    # Resource limits
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+          cpus: '2.0'
+        reservations:
+          memory: 2G
+          cpus: '1.0'
+    
+    # Health check
+    healthcheck:
+      test: ["CMD", "bash", "-c", "python3 -c 'import apk_decompiler; print(\"OK\")'"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    
+    # Command (override as needed)
+    # command: apk-decompiler --help
+    # command: bash -c "apk-decompiler decompile /app/input/app.apk"
+
+  # Development service with all tools installed
+  apk-decompiler-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: apk-decompiler-cli-dev
+    
+    environment:
+      - DEBUG=true
+      - LOG_LEVEL=DEBUG
+      - DEVELOPMENT_MODE=true
+      - PYTHONPATH=/app/src
+    
+    volumes:
+      - .:/app
+      - ./decompiled:/app/decompiled
+      - ./temp:/app/temp
+      - ./cache:/app/cache
+      - ./logs:/app/logs
+      - ./input:/app/input
+      - ./output:/app/output
+    
+    working_dir: /app
+    stdin_open: true
+    tty: true
+    
+    # Install development dependencies
+    command: >
+      bash -c "
+        pip install -e .[dev] &&
+        pip install -r requirements-dev.txt &&
+        bash scripts/install-tools.sh &&
+        bash
+      "
+    
+    # Expose development server port
+    ports:
+      - "8000:8000"
+
+  # Tool verification service
+  apk-decompiler-verify:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: apk-decompiler-verify
+    
+    volumes:
+      - ./input:/app/input
+    
+    command: >
+      bash -c "
+        bash scripts/install-tools.sh &&
+        bash scripts/verify-tools.sh
+      "
+
+networks:
+  default:
+    driver: bridge
+
+volumes:
+  decompiled:
+    driver: local
+  temp:
+    driver: local
+  cache:
+    driver: local
+  logs:
+    driver: local
