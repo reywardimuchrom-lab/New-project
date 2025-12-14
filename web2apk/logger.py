@@ -1,5 +1,5 @@
 """
-Logging configuration for the APK decompiler.
+Logging configuration for web2apk.
 """
 
 import sys

@@ -129,8 +129,14 @@ dmypy.json
 *.swo
 *~
 
-# APK decompiler specific
+# Web2APK specific
 output/
+dist/
+build/
 decompiled/
 *.apk
 *.dex
+config.yaml
+config.yml
+config.json
+assets/
