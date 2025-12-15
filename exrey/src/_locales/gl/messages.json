@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "exrey",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -393,11 +393,11 @@
   },
   "settingsNoCSPReportsPrompt": {
     "message": "Bloquear reportes CSP",
-    "description": "background information: https://github.com/gorhill/uBlock/issues/3150"
+    "description": "background information: https://github.com/exrey/exrey/issues/3150"
   },
   "settingsUncloakCnamePrompt": {
     "message": "Descubrir nomes canónicos",
-    "description": "background information: https://github.com/uBlockOrigin/uBlock-issues/issues/1513"
+    "description": "background information: https://github.com/exrey/exrey-issues/issues/1513"
   },
   "settingsAdvanced": {
     "message": "Avanzadas",
@@ -608,7 +608,7 @@
     "description": "English: List of your dynamic filtering rules."
   },
   "rulesFormatHint": {
-    "message": "Sintaxe das regras: <code>orixe destino tipo acción</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>documentación completa</a>).",
+    "message": "Sintaxe das regras: <code>orixe destino tipo acción</code> (<a href='https://github.com/exrey/exrey/wiki/Dynamic-filtering:-rule-syntax'>documentación completa</a>).",
     "description": "English: dynamic rule syntax and full documentation."
   },
   "rulesSort": {
@@ -928,7 +928,7 @@
     "description": "Header of 'Filter issues' section in Support pane"
   },
   "supportS3P1": {
-    "message": "Informar de problemas co filtrado en sitios web específicos no <span data-url=\"https://github.com/uBlockOrigin/uAssets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code> issue tracker</span>.<u>Require unha conta en GitHub.</ul>",
+    "message": "Informar de problemas co filtrado en sitios web específicos no <span data-url=\"https://github.com/exrey/exrey-assets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code> issue tracker</span>.<u>Require unha conta en GitHub.</ul>",
     "description": "First paragraph of 'Filter issues' section in Support pane"
   },
   "supportS3P2": {
@@ -944,7 +944,7 @@
     "description": "Header of 'Bug report' section in Support pane"
   },
   "supportS4P1": {
-    "message": "Informar de problemas co filtrado en sitios web específicos no <span data-url=\"https://github.com/uBlockOrigin/uAssets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code> issue tracker</span>.<u>Require unha conta en GitHub.</ul>",
+    "message": "Informar de problemas co filtrado en sitios web específicos no <span data-url=\"https://github.com/exrey/exrey-assets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code> issue tracker</span>.<u>Require unha conta en GitHub.</ul>",
     "description": "First paragraph of 'Bug report' section in Support pane"
   },
   "supportS5H": {

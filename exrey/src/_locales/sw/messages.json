@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "exrey",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -393,11 +393,11 @@
   },
   "settingsNoCSPReportsPrompt": {
     "message": "Zuia ripoti za CSP",
-    "description": "background information: https://github.com/gorhill/uBlock/issues/3150"
+    "description": "background information: https://github.com/exrey/exrey/issues/3150"
   },
   "settingsUncloakCnamePrompt": {
     "message": "Fichua majina kawaida",
-    "description": "background information: https://github.com/uBlockOrigin/uBlock-issues/issues/1513"
+    "description": "background information: https://github.com/exrey/exrey-issues/issues/1513"
   },
   "settingsAdvanced": {
     "message": "Mahiri",
@@ -608,7 +608,7 @@
     "description": "English: List of your dynamic filtering rules."
   },
   "rulesFormatHint": {
-    "message": "Kanuni za sintaksi: <code>tendo la aina ya chanzo fikio</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>Kumbukumbu kamili</a>).",
+    "message": "Kanuni za sintaksi: <code>tendo la aina ya chanzo fikio</code> (<a href='https://github.com/exrey/exrey/wiki/Dynamic-filtering:-rule-syntax'>Kumbukumbu kamili</a>).",
     "description": "English: dynamic rule syntax and full documentation."
   },
   "rulesSort": {
@@ -928,7 +928,7 @@
     "description": "Header of 'Filter issues' section in Support pane"
   },
   "supportS3P1": {
-    "message": "Ripoti shida za vichujio za tovuti maalum kwenye<span data-url=\"https://github.com/uBlockOrigin/uAssets/issues?q=is%3Aissue\">uBlockOrigin/uAssets</code>kifuatiliaji cha shida</span>. <u>Itahitaji akaunti ya GitHub.</u>",
+    "message": "Ripoti shida za vichujio za tovuti maalum kwenye<span data-url=\"https://github.com/exrey/exrey-assets/issues?q=is%3Aissue\">uBlockOrigin/uAssets</code>kifuatiliaji cha shida</span>. <u>Itahitaji akaunti ya GitHub.</u>",
     "description": "First paragraph of 'Filter issues' section in Support pane"
   },
   "supportS3P2": {
@@ -944,7 +944,7 @@
     "description": "Header of 'Bug report' section in Support pane"
   },
   "supportS4P1": {
-    "message": "Ripoti shida na uBlock Origin yenyewe kwenye<span data-url=\"https://github.com/uBlockOrigin/uBlock-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code>kifuatiliaji cha shida</span>.<u>Itahitaji akaunti ya Github.</u>",
+    "message": "Ripoti shida na uBlock Origin yenyewe kwenye<span data-url=\"https://github.com/exrey/exrey-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code>kifuatiliaji cha shida</span>.<u>Itahitaji akaunti ya Github.</u>",
     "description": "First paragraph of 'Bug report' section in Support pane"
   },
   "supportS5H": {
@@ -1148,7 +1148,7 @@
     "description": "Used as a title for the document-blocked page"
   },
   "docblockedPrompt1": {
-    "message": "uBlock Origin imezuia ukurasa huu kupakia:",
+    "message": "exrey imezuia ukurasa huu kupakia:",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {

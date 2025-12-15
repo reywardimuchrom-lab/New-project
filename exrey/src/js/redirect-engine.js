@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 import { LineIterator, orphanizeString } from './text-utils.js';
@@ -116,7 +116,7 @@ class RedirectEntry {
             return url;
         }
         if ( this.data === undefined ) { return; }
-        // https://github.com/uBlockOrigin/uBlock-issues/issues/701
+        // https://github.com/exrey/exrey-issues/issues/701
         if ( this.data === '' ) {
             const mime = typeToMimeMap.get(fctxt.type);
             if ( mime === '' ) { return; }
@@ -220,7 +220,7 @@ class RedirectEngine {
 
     // https://github.com/uBlockOrigin/uAssets/commit/deefe8755511
     //   Consider 'none' a reserved keyword, to be used to disable redirection.
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/1419
+    // https://github.com/exrey/exrey-issues/issues/1419
     //   Append newlines to raw text to ensure processing of trailing resource.
 
     resourcesFromString(text) {

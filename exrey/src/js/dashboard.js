@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 import { dom, qs$ } from './dom.js';
@@ -126,7 +126,7 @@ if ( self.location.hash.slice(1) === 'no-dashboard.html' ) {
     dom.cl.remove(dom.body, 'notReady');
 
     const results = await Promise.all([
-        // https://github.com/uBlockOrigin/uBlock-issues/issues/106
+        // https://github.com/exrey/exrey-issues/issues/106
         vAPI.messaging.send('dashboard', { what: 'dashboardConfig' }),
         vAPI.localStorage.getItemAsync('dashboardLastVisitedPane'),
     ]);

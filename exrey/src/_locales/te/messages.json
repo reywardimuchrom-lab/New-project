@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "exrey",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -352,7 +352,7 @@
     "description": ""
   },
   "settingsAdvancedUserPrompt": {
-    "message": "మీరు నిపుణత కలిగిన వినియోగాదారులైతే (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>అవసరమైన సమాచారం</a>)",
+    "message": "మీరు నిపుణత కలిగిన వినియోగాదారులైతే (<a href='https://github.com/exrey/exrey/wiki/Advanced-user-features'>అవసరమైన సమాచారం</a>)",
     "description": "Checkbox to let user access advanced, technical features"
   },
   "settingsPrefetchingDisabledPrompt": {
@@ -393,11 +393,11 @@
   },
   "settingsNoCSPReportsPrompt": {
     "message": "CSP నివేదికలను నిరోధించు",
-    "description": "background information: https://github.com/gorhill/uBlock/issues/3150"
+    "description": "background information: https://github.com/exrey/exrey/issues/3150"
   },
   "settingsUncloakCnamePrompt": {
     "message": "కానానికల్ పేర్లను తెరవండి",
-    "description": "background information: https://github.com/uBlockOrigin/uBlock-issues/issues/1513"
+    "description": "background information: https://github.com/exrey/exrey-issues/issues/1513"
   },
   "settingsAdvanced": {
     "message": "ఆధునిక",
@@ -608,7 +608,7 @@
     "description": "English: List of your dynamic filtering rules."
   },
   "rulesFormatHint": {
-    "message": "నియమనిర్మాన పద్ధతి: <code>మూలం గమ్యం రకం చర్య</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>పూర్తి వివరాలు</a>).",
+    "message": "నియమనిర్మాన పద్ధతి: <code>మూలం గమ్యం రకం చర్య</code> (<a href='https://github.com/exrey/exrey/wiki/Dynamic-filtering:-rule-syntax'>పూర్తి వివరాలు</a>).",
     "description": "English: dynamic rule syntax and full documentation."
   },
   "rulesSort": {
@@ -628,7 +628,7 @@
     "description": "English: a sort option for list of rules."
   },
   "whitelistPrompt": {
-    "message": "uBlock Origin అచేతనబడించిన హోస్టూల జాబితా, ఇది మీరు కూర్చినది,. ఒక్కో పంక్తికి ఒక్కో నమోదు. చెల్లని నమోదులు మౌనంగా విస్మరించబడుతాయి.",
+    "message": "exrey అచేతనబడించిన హోస్టూల జాబితా, ఇది మీరు కూర్చినది,. ఒక్కో పంక్తికి ఒక్కో నమోదు. చెల్లని నమోదులు మౌనంగా విస్మరించబడుతాయి.",
     "description": "A concise description of the 'Trusted sites' pane."
   },
   "whitelistImport": {
@@ -928,7 +928,7 @@
     "description": "Header of 'Filter issues' section in Support pane"
   },
   "supportS3P1": {
-    "message": "Report filter issues with specific websites to the <span data-url=\"https://github.com/uBlockOrigin/uAssets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code> issue tracker</span>. <u>Requires a GitHub account.</u>",
+    "message": "Report filter issues with specific websites to the <span data-url=\"https://github.com/exrey/exrey-assets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code> issue tracker</span>. <u>Requires a GitHub account.</u>",
     "description": "First paragraph of 'Filter issues' section in Support pane"
   },
   "supportS3P2": {
@@ -944,7 +944,7 @@
     "description": "Header of 'Bug report' section in Support pane"
   },
   "supportS4P1": {
-    "message": "Report issues with uBlock Origin itself to the <span data-url=\"https://github.com/uBlockOrigin/uBlock-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code> issue tracker</span>. <u>Requires a GitHub account.</u>",
+    "message": "Report issues with uBlock Origin itself to the <span data-url=\"https://github.com/exrey/exrey-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code> issue tracker</span>. <u>Requires a GitHub account.</u>",
     "description": "First paragraph of 'Bug report' section in Support pane"
   },
   "supportS5H": {

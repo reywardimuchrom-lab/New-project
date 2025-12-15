@@ -164,7 +164,7 @@
 /*
  * Default dark theme starts here
  * 
- * https://github.com/uBlockOrigin/uBlock-issues/issues/1027#issuecomment-629641072
+ * https://github.com/exrey/uBlock-issues/issues/1027#issuecomment-629641072
  *   Assign a default background color if dark mode is enabled -- hopefully
  *   this will avoid flashes of white background until the document's own CSS
  *   overrides the default color value below.

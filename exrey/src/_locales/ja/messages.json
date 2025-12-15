@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "exrey",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -393,11 +393,11 @@
   },
   "settingsNoCSPReportsPrompt": {
     "message": "CSP レポートをブロックする",
-    "description": "background information: https://github.com/gorhill/uBlock/issues/3150"
+    "description": "background information: https://github.com/exrey/exrey/issues/3150"
   },
   "settingsUncloakCnamePrompt": {
     "message": "CNAME クローキングを解除する",
-    "description": "background information: https://github.com/uBlockOrigin/uBlock-issues/issues/1513"
+    "description": "background information: https://github.com/exrey/exrey-issues/issues/1513"
   },
   "settingsAdvanced": {
     "message": "高度な設定",
@@ -608,7 +608,7 @@
     "description": "English: List of your dynamic filtering rules."
   },
   "rulesFormatHint": {
-    "message": "ルールの構文: <code>発信源 通信先 タイプ アクション</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>詳しい解説</a>)",
+    "message": "ルールの構文: <code>発信源 通信先 タイプ アクション</code> (<a href='https://github.com/exrey/exrey/wiki/Dynamic-filtering:-rule-syntax'>詳しい解説</a>)",
     "description": "English: dynamic rule syntax and full documentation."
   },
   "rulesSort": {
@@ -688,7 +688,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "uBlock Origin wiki: ログ",
+    "message": "exrey wiki: ログ",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -912,7 +912,7 @@
     "description": "Header of 'Documentation' section in Support pane"
   },
   "supportS1P1": {
-    "message": "uBlock Origin のすべての機能については <code>uBlock/wiki</code> のドキュメントをお読みください。",
+    "message": "exrey のすべての機能については <code>uBlock/wiki</code> のドキュメントをお読みください。",
     "description": "First paragraph of 'Documentation' section in Support pane"
   },
   "supportS2H": {
@@ -928,7 +928,7 @@
     "description": "Header of 'Filter issues' section in Support pane"
   },
   "supportS3P1": {
-    "message": "特定のウェブサイトで起きるフィルターの問題は <span data-url=\"https://github.com/uBlockOrigin/uAssets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code> の Issue トラッカー</span>に報告してください。<u>GitHub のアカウントが必要です。</u>",
+    "message": "特定のウェブサイトで起きるフィルターの問題は <span data-url=\"https://github.com/exrey/exrey-assets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code> の Issue トラッカー</span>に報告してください。<u>GitHub のアカウントが必要です。</u>",
     "description": "First paragraph of 'Filter issues' section in Support pane"
   },
   "supportS3P2": {
@@ -944,7 +944,7 @@
     "description": "Header of 'Bug report' section in Support pane"
   },
   "supportS4P1": {
-    "message": "uBlock Origin 自体の問題は <span data-url=\"https://github.com/uBlockOrigin/uBlock-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code> の Issue トラッカー</span>に報告してください。<u>GitHub のアカウントが必要です。</u>",
+    "message": "exrey 自体の問題は <span data-url=\"https://github.com/exrey/exrey-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code> の Issue トラッカー</span>に報告してください。<u>GitHub のアカウントが必要です。</u>",
     "description": "First paragraph of 'Bug report' section in Support pane"
   },
   "supportS5H": {
@@ -996,7 +996,7 @@
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option3": {
-    "message": "uBlock Origin を検出します",
+    "message": "exrey を検出します",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option4": {
@@ -1004,7 +1004,7 @@
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option5": {
-    "message": "uBlock Origin を有効にすると誤動作します",
+    "message": "exrey を有効にすると誤動作します",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option6": {
@@ -1148,7 +1148,7 @@
     "description": "Used as a title for the document-blocked page"
   },
   "docblockedPrompt1": {
-    "message": "uBlock Origin は、 以下のサイトの読み込みを防止しました:",
+    "message": "exrey は、 以下のサイトの読み込みを防止しました:",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {

@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 /******************************************************************************/
@@ -179,7 +179,7 @@ function onBeforeRootFrameRequest(fctxt) {
         fctxt.setRealm('network').setFilter(logData);
     }
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/760
+    // https://github.com/exrey/exrey-issues/issues/760
     //   Redirect non-blocked request?
     if ( trusted === false && pageStore !== null ) {
         if ( result !== 1 ) {
@@ -245,9 +245,9 @@ function onBeforeRootFrameRequest(fctxt) {
 // https://github.com/chrisaljoudi/uBlock/issues/1128
 //   Do not block if the match begins after the hostname,
 //   except when the filter is specifically of type `other`.
-// https://github.com/gorhill/uBlock/issues/490
+// https://github.com/exrey/exrey/issues/490
 //   Removing this for the time being, will need a new, dedicated type.
-// https://github.com/uBlockOrigin/uBlock-issues/issues/1501
+// https://github.com/exrey/exrey-issues/issues/1501
 //   Support explicit exception filters.
 //
 // Let result of match for specific `document` type be `rs`
@@ -330,9 +330,9 @@ function shouldStrictBlock(fctxt, loggerEnabled) {
 
 /******************************************************************************/
 
-// https://github.com/gorhill/uBlock/issues/3208
+// https://github.com/exrey/exrey/issues/3208
 //   Mind case insensitivity.
-// https://github.com/uBlockOrigin/uBlock-issues/issues/1147
+// https://github.com/exrey/exrey-issues/issues/1147
 //   Do not strict-block if the filter pattern does not contain at least one
 //   token character.
 
@@ -368,13 +368,13 @@ function onBeforeBehindTheSceneRequest(fctxt) {
     const pageStore = µb.pageStoreFromTabId(fctxt.tabId);
     if ( pageStore === null ) { return; }
 
-    // https://github.com/gorhill/uBlock/issues/3150
+    // https://github.com/exrey/exrey/issues/3150
     //   Ability to globally block CSP reports MUST also apply to
     //   behind-the-scene network requests.
 
     let result = 0;
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/339
+    // https://github.com/exrey/exrey-issues/issues/339
     //   Need to also test against `-scheme` since tabOrigin is normalized.
     //   Not especially elegant but for now this accomplishes the purpose of
     //   not dealing with network requests fired from a synthetic scope,
@@ -393,7 +393,7 @@ function onBeforeBehindTheSceneRequest(fctxt) {
         // be blocked, so we test for whitelisting and modify the result only
         // when the request is being blocked.
         //
-        // https://github.com/uBlockOrigin/uBlock-issues/issues/1478
+        // https://github.com/exrey/exrey-issues/issues/1478
         //   Also remove potential redirection when request is to be
         //   whitelisted.
         if (
@@ -406,7 +406,7 @@ function onBeforeBehindTheSceneRequest(fctxt) {
         }
     }
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/1204
+    // https://github.com/exrey/exrey-issues/issues/1204
     onBeforeBehindTheSceneRequest.journalAddRequest(fctxt, result);
 
     if ( logger.enabled ) {
@@ -426,7 +426,7 @@ function onBeforeBehindTheSceneRequest(fctxt) {
     }
 }
 
-// https://github.com/uBlockOrigin/uBlock-issues/issues/1204
+// https://github.com/exrey/exrey-issues/issues/1204
 //   Report the tabless network requests to all page stores matching the
 //   document origin. This is an approximation, there is unfortunately no
 //   way to know for sure which exact page triggered a tabless network
@@ -523,7 +523,7 @@ function onHeadersReceived(details) {
 
     const mime = mimeFromHeaders(responseHeaders);
 
-    // https://github.com/gorhill/uBlock/issues/2813
+    // https://github.com/exrey/exrey/issues/2813
     //   Disable the blocking of large media elements if the document is itself
     //   a media element: the resource was not prevented from loading so no
     //   point to further block large media elements for the current document.
@@ -566,7 +566,7 @@ function onHeadersReceived(details) {
         modifiedHeaders = true;
     }
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/229#issuecomment-2220354261
+    // https://github.com/exrey/exrey-issues/issues/229#issuecomment-2220354261
     // Inject CSP/PP in document resource only
     if ( fctxt.isDocument() ) {
         if ( injectCSP(fctxt, pageStore, responseHeaders) === true ) {
@@ -580,7 +580,7 @@ function onHeadersReceived(details) {
     // https://bugzilla.mozilla.org/show_bug.cgi?id=1376932
     //   Prevent document from being cached by the browser if we modified it,
     //   either through HTML filtering and/or modified response headers.
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/229
+    // https://github.com/exrey/exrey-issues/issues/229
     //   Use `no-cache` instead of `no-cache, no-store, must-revalidate`, this
     //   allows Firefox's offline mode to work as expected.
     if ( modifiedHeaders && isGecko ) {
@@ -965,7 +965,7 @@ const bodyFilterer = (( ) => {
                 }
             }
 
-            // https://github.com/gorhill/uBlock/issues/3478
+            // https://github.com/exrey/exrey/issues/3478
             const statusCode = details.statusCode || 0;
             if ( statusCode === 0 ) { return; }
 
@@ -1021,7 +1021,7 @@ function injectCSP(fctxt, pageStore, responseHeaders) {
             fctxt.setRealm('network').setType('scripting').toLogger();
         }
     }
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/422
+    // https://github.com/exrey/exrey-issues/issues/422
     //   We need to derive a special context for filtering `inline-script`,
     //   as the embedding document for this "resource" will always be the
     //   frame itself, not that of the parent of the frame.
@@ -1038,7 +1038,7 @@ function injectCSP(fctxt, pageStore, responseHeaders) {
         }
     }
 
-    // https://github.com/gorhill/uBlock/issues/1539
+    // https://github.com/exrey/exrey/issues/1539
     // - Use a CSP to also forbid inline fonts if remote fonts are blocked.
     fctxt.type = 'inline-font';
     if ( pageStore.filterRequest(fctxt) === 1 ) {
@@ -1166,9 +1166,9 @@ function injectPP(fctxt, pageStore, responseHeaders) {
 
 /******************************************************************************/
 
-// https://github.com/gorhill/uBlock/issues/1163
+// https://github.com/exrey/exrey/issues/1163
 //   "Block elements by size".
-// https://github.com/gorhill/uBlock/issues/1390#issuecomment-187310719
+// https://github.com/exrey/exrey/issues/1390#issuecomment-187310719
 //   Do not foil when the media element is fetched from the browser
 //   cache. This works only when the webext API supports the `fromCache`
 //   property (Firefox).
@@ -1291,7 +1291,7 @@ function onResponseStarted(details) {
 
 /******************************************************************************/
 
-// https://github.com/uBlockOrigin/uBlock-issues/issues/2350
+// https://github.com/exrey/exrey-issues/issues/2350
 //   Added scriptlet injection attempt at onResponseStarted time as per
 //   https://github.com/AdguardTeam/AdguardBrowserExtension/issues/1029 and
 //   https://github.com/AdguardTeam/AdguardBrowserExtension/blob/9ab85be5/Extension/src/background/webrequest.js#L620

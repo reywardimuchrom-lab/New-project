@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "exrey",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -352,7 +352,7 @@
     "description": ""
   },
   "settingsAdvancedUserPrompt": {
-    "message": "ฉันเป็นผู้ใช้ขั้นสูง (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>โปรดอ่านเอกสารสำคัญ</a>)",
+    "message": "ฉันเป็นผู้ใช้ขั้นสูง (<a href='https://github.com/exrey/exrey/wiki/Advanced-user-features'>โปรดอ่านเอกสารสำคัญ</a>)",
     "description": "Checkbox to let user access advanced, technical features"
   },
   "settingsPrefetchingDisabledPrompt": {
@@ -393,11 +393,11 @@
   },
   "settingsNoCSPReportsPrompt": {
     "message": "บล็อกรายงาน CSP",
-    "description": "background information: https://github.com/gorhill/uBlock/issues/3150"
+    "description": "background information: https://github.com/exrey/exrey/issues/3150"
   },
   "settingsUncloakCnamePrompt": {
     "message": "เปิดเผยชื่อตามหลักเกณฑ์",
-    "description": "background information: https://github.com/uBlockOrigin/uBlock-issues/issues/1513"
+    "description": "background information: https://github.com/exrey/exrey-issues/issues/1513"
   },
   "settingsAdvanced": {
     "message": "ขั้นสูง",
@@ -608,7 +608,7 @@
     "description": "English: List of your dynamic filtering rules."
   },
   "rulesFormatHint": {
-    "message": "ข้อกำหนดเงื่อนไข: <code>การดำเนินการประเภทแหล่งปลายทาง</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>เอกสารฉบับเต็ม</a>)",
+    "message": "ข้อกำหนดเงื่อนไข: <code>การดำเนินการประเภทแหล่งปลายทาง</code> (<a href='https://github.com/exrey/exrey/wiki/Dynamic-filtering:-rule-syntax'>เอกสารฉบับเต็ม</a>)",
     "description": "English: dynamic rule syntax and full documentation."
   },
   "rulesSort": {
@@ -688,7 +688,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "uBlock Origin wiki: ตัวลงบันทึก",
+    "message": "exrey wiki: ตัวลงบันทึก",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -928,7 +928,7 @@
     "description": "Header of 'Filter issues' section in Support pane"
   },
   "supportS3P1": {
-    "message": "รายงานปัญหาการกรองด้วยเว็บไซต์เฉพาะที่ <span data-url=\"https://github.com/uBlockOrigin/uAssets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code> ตัวติดตามปัญหา</span>. <u>ต้องใช้บัญชี GitHub</u>",
+    "message": "รายงานปัญหาการกรองด้วยเว็บไซต์เฉพาะที่ <span data-url=\"https://github.com/exrey/exrey-assets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code> ตัวติดตามปัญหา</span>. <u>ต้องใช้บัญชี GitHub</u>",
     "description": "First paragraph of 'Filter issues' section in Support pane"
   },
   "supportS3P2": {
@@ -944,7 +944,7 @@
     "description": "Header of 'Bug report' section in Support pane"
   },
   "supportS4P1": {
-    "message": "รายงานปัญหาด้วย uBlock Origin เอง <span data-url=\"https://github.com/uBlockOrigin/uBlock-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code> ปัญหาตัวติดตาม</span>. <u>ต้องใช้บัญชี GitHub</u>",
+    "message": "รายงานปัญหาด้วย uBlock Origin เอง <span data-url=\"https://github.com/exrey/exrey-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code> ปัญหาตัวติดตาม</span>. <u>ต้องใช้บัญชี GitHub</u>",
     "description": "First paragraph of 'Bug report' section in Support pane"
   },
   "supportS5H": {
@@ -1148,7 +1148,7 @@
     "description": "Used as a title for the document-blocked page"
   },
   "docblockedPrompt1": {
-    "message": "uBlock Origin ป้องกันไม่ให้โหลดหน้าต่อไปนี้:",
+    "message": "exrey ป้องกันไม่ให้โหลดหน้าต่อไปนี้:",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {

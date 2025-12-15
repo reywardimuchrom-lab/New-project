@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 import { dom, qs$ } from './dom.js';
@@ -99,7 +99,7 @@ if ( typeof details.to === 'string' && details.to.length !== 0 ) {
 
 /******************************************************************************/
 
-// https://github.com/gorhill/uBlock/issues/691
+// https://github.com/exrey/exrey/issues/691
 //   Parse URL to extract as much useful information as possible. This is
 //   useful to assist the user in deciding whether to navigate to the web page.
 (( ) => {
@@ -132,7 +132,7 @@ if ( typeof details.to === 'string' && details.to.length !== 0 ) {
         return li;
     };
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/1649
+    // https://github.com/exrey/exrey-issues/issues/1649
     //   Limit recursion.
     const renderParams = function(parentNode, rawURL, depth = 0) {
         let url;

@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 import { dom, qs$, qsa$ } from './dom.js';
@@ -300,7 +300,7 @@ function onUserSettingsReceived(details) {
 
 /******************************************************************************/
 
-self.wikilink = 'https://github.com/gorhill/uBlock/wiki/Dashboard:-Settings';
+self.wikilink = 'https://github.com/exrey/exrey/wiki/Dashboard:-Settings';
 
 self.hasUnsavedData = function() {
     return false;
@@ -316,7 +316,7 @@ vAPI.messaging.send('dashboard', { what: 'getLocalData' }).then(result => {
     onLocalDataReceived(result);
 });
 
-// https://github.com/uBlockOrigin/uBlock-issues/issues/591
+// https://github.com/exrey/exrey-issues/issues/591
 dom.on(
     '[data-i18n-title="settingsAdvancedUserSettings"]',
     'click',

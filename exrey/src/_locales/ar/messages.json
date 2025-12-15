@@ -352,7 +352,7 @@
     "description": ""
   },
   "settingsAdvancedUserPrompt": {
-    "message": "أنا مستخدم ذو خبرة (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>قراءة إجبارية</a>)",
+    "message": "أنا مستخدم ذو خبرة (<a href='https://github.com/exrey/exrey/wiki/Advanced-user-features'>قراءة إجبارية</a>)",
     "description": "Checkbox to let user access advanced, technical features"
   },
   "settingsPrefetchingDisabledPrompt": {
@@ -393,11 +393,11 @@
   },
   "settingsNoCSPReportsPrompt": {
     "message": "حظر تقارير الـ CSP",
-    "description": "background information: https://github.com/gorhill/uBlock/issues/3150"
+    "description": "background information: https://github.com/exrey/exrey/issues/3150"
   },
   "settingsUncloakCnamePrompt": {
     "message": "فك الأسماء المتعارف عليها",
-    "description": "background information: https://github.com/uBlockOrigin/uBlock-issues/issues/1513"
+    "description": "background information: https://github.com/exrey/exrey-issues/issues/1513"
   },
   "settingsAdvanced": {
     "message": "متقدم",
@@ -608,7 +608,7 @@
     "description": "English: List of your dynamic filtering rules."
   },
   "rulesFormatHint": {
-    "message": "صياغة القواعد: <code>مصدر نوع وجهة العمل</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>تعليمات كاملة</a>).",
+    "message": "صياغة القواعد: <code>مصدر نوع وجهة العمل</code> (<a href='https://github.com/exrey/exrey/wiki/Dynamic-filtering:-rule-syntax'>تعليمات كاملة</a>).",
     "description": "English: dynamic rule syntax and full documentation."
   },
   "rulesSort": {
@@ -928,7 +928,7 @@
     "description": "Header of 'Filter issues' section in Support pane"
   },
   "supportS3P1": {
-    "message": "أبلغ عن مشكلات التصفية مع مواقع ويب معينة إلى <span data-url=”https://github.com/uBlockOrigin/uAssets/issues?q=is%3Aissue“><code>uBlockOrigin/uAssets</code> issue tracker</span>. <u>يتطلب حساب GitHub.</u>",
+    "message": "أبلغ عن مشكلات التصفية مع مواقع ويب معينة إلى <span data-url=”https://github.com/exrey/exrey-assets/issues?q=is%3Aissue“><code>uBlockOrigin/uAssets</code> issue tracker</span>. <u>يتطلب حساب GitHub.</u>",
     "description": "First paragraph of 'Filter issues' section in Support pane"
   },
   "supportS3P2": {
@@ -944,7 +944,7 @@
     "description": "Header of 'Bug report' section in Support pane"
   },
   "supportS4P1": {
-    "message": "الإبلاغ عن المشكلات المتعلقة بيو بلوك أوريجين نفسه إلى <span data-url=\"https://github.com/uBlockOrigin/uBlock-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code> أداة تعقب المشكلات</span>. يتطلب حساب GitHub",
+    "message": "الإبلاغ عن المشكلات المتعلقة بيو بلوك أوريجين نفسه إلى <span data-url=\"https://github.com/exrey/exrey-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code> أداة تعقب المشكلات</span>. يتطلب حساب GitHub",
     "description": "First paragraph of 'Bug report' section in Support pane"
   },
   "supportS5H": {

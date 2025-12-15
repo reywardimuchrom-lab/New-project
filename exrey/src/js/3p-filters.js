@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 import { dom, qs$, qsa$ } from './dom.js';
@@ -263,7 +263,7 @@ const renderFilterLists = ( ) => {
                 groupDetails.lists[listkey] = listDetails;
             }
         }
-        // https://github.com/uBlockOrigin/uBlock-issues/issues/3154#issuecomment-1975413427
+        // https://github.com/exrey/exrey-issues/issues/3154#issuecomment-1975413427
         //   Remove empty sections
         for ( const groupkey of groupKeys ) {
             const groupDetails = listTree[groupkey];
@@ -289,7 +289,7 @@ const renderFilterLists = ( ) => {
         qs$('#suspendUntilListsAreLoaded').checked =
             listsetDetails.suspendUntilListsAreLoaded === true;
 
-        // https://github.com/gorhill/uBlock/issues/2394
+        // https://github.com/exrey/exrey/issues/2394
         dom.cl.toggle(dom.body, 'updating', listsetDetails.isUpdating);
 
         renderWidgets();
@@ -533,7 +533,7 @@ const onPurgeClicked = ev => {
 
     // If the cached version is purged, the installed version must be assumed
     // to be obsolete.
-    // https://github.com/gorhill/uBlock/issues/1733
+    // https://github.com/exrey/exrey/issues/1733
     //   An external filter list must not be marked as obsolete, they will
     //   always be fetched anyways if there is no cached copy.
     dom.cl.add(dom.body, 'updating');
@@ -883,7 +883,7 @@ self.cloud.onPull = function fromCloudData(data, append) {
 
 /******************************************************************************/
 
-self.wikilink = 'https://github.com/gorhill/uBlock/wiki/Dashboard:-Filter-lists';
+self.wikilink = 'https://github.com/exrey/exrey/wiki/Dashboard:-Filter-lists';
 
 self.hasUnsavedData = function() {
     return hashFromCurrentFromSettings() !== filteringSettingsHash;

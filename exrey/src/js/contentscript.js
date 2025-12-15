@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 /*******************************************************************************
@@ -99,7 +99,7 @@
 
 // Abort execution if our global vAPI object does not exist.
 //   https://github.com/chrisaljoudi/uBlock/issues/456
-//   https://github.com/gorhill/uBlock/issues/2029
+//   https://github.com/exrey/exrey/issues/2029
 
 // >>>>>>>> start of HUGE-IF-BLOCK
 if ( typeof vAPI === 'object' && !vAPI.contentScript ) {
@@ -114,7 +114,7 @@ vAPI.contentScript = true;
 /******************************************************************************/
 /******************************************************************************/
 
-// https://github.com/uBlockOrigin/uBlock-issues/issues/688#issuecomment-663657508
+// https://github.com/exrey/exrey-issues/issues/688#issuecomment-663657508
 {
     let context = self;
     try {
@@ -187,7 +187,7 @@ vAPI.userStylesheet = {
 
 */
 
-// https://github.com/gorhill/uBlock/issues/2147
+// https://github.com/exrey/exrey/issues/2147
 
 vAPI.SafeAnimationFrame = class {
     constructor(callback) {
@@ -245,7 +245,7 @@ vAPI.SafeAnimationFrame = class {
 /******************************************************************************/
 /******************************************************************************/
 
-// https://github.com/uBlockOrigin/uBlock-issues/issues/552
+// https://github.com/exrey/exrey-issues/issues/552
 //   Listen and report CSP violations so that blocked resources through CSP
 //   are properly reported in the logger.
 
@@ -699,7 +699,7 @@ vAPI.DOMFilterer = class {
     };
 
     // https://github.com/chrisaljoudi/uBlock/issues/399
-    // https://github.com/gorhill/uBlock/issues/2848
+    // https://github.com/exrey/exrey/issues/2848
     //   Use a user stylesheet to collapse placeholders.
     const getCollapseToken = ( ) => {
         if ( collapseToken === undefined ) {
@@ -826,7 +826,7 @@ vAPI.DOMFilterer = class {
         attributeFilter: [ 'src' ]
     };
 
-    // https://github.com/gorhill/uBlock/issues/162
+    // https://github.com/exrey/exrey/issues/162
     //   Be prepared to deal with possible change of src attribute.
     const addIFrame = function(iframe, dontObserve) {
         if ( dontObserve !== true ) {
@@ -993,7 +993,7 @@ vAPI.DOMFilterer = class {
     // filtering engine, and in return we will obtain only the relevant
     // CSS selectors.
 
-    // https://github.com/gorhill/uBlock/issues/672
+    // https://github.com/exrey/exrey/issues/672
     // http://www.w3.org/TR/2014/REC-html5-20141028/infrastructure.html#space-separated-tokens
     // http://jsperf.com/enumerate-classes/6
 
@@ -1006,7 +1006,7 @@ vAPI.DOMFilterer = class {
         out.push(hash);
     };
 
-    // https://github.com/uBlockOrigin/uBlock-issues/discussions/2076
+    // https://github.com/exrey/exrey-issues/discussions/2076
     //   Performance: avoid using Element.classList
     const classesFromNode = (node, out) => {
         const s = node.getAttribute('class');
@@ -1124,7 +1124,7 @@ vAPI.DOMFilterer = class {
     const domWatcherInterface = {
         onDOMCreated: function() {
             domFilterer = vAPI.domFilterer;
-            // https://github.com/uBlockOrigin/uBlock-issues/issues/1692
+            // https://github.com/exrey/exrey-issues/issues/1692
             //   Look-up safe-only selectors to mitigate probability of
             //   html/body elements of erroneously being targeted.
             const hashes = [];
@@ -1197,7 +1197,7 @@ vAPI.DOMFilterer = class {
 {
     const onDomReady = ( ) => {
         // This can happen on Firefox. For instance:
-        // https://github.com/gorhill/uBlock/issues/1893
+        // https://github.com/exrey/exrey/issues/1893
         if ( window.location === null ) { return; }
         if ( self.vAPI instanceof Object === false ) { return; }
 
@@ -1232,7 +1232,7 @@ vAPI.DOMFilterer = class {
             // https://github.com/chrisaljoudi/uBlock/issues/1143
             //   Find a link under the mouse, to try to avoid confusing new tabs
             //   as nuisance popups.
-            // https://github.com/uBlockOrigin/uBlock-issues/issues/777
+            // https://github.com/exrey/exrey-issues/issues/777
             //   Mind that href may not be a string.
             const elem = ev.target.closest('a[href]');
             if ( elem === null || typeof elem.href !== 'string' ) { return; }
@@ -1250,7 +1250,7 @@ vAPI.DOMFilterer = class {
         });
     };
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/403
+    // https://github.com/exrey/exrey-issues/issues/403
     //   If there was a spurious port disconnection -- in which case the
     //   response is expressly set to `null`, rather than undefined or
     //   an object -- let's stay around, we may be given the opportunity

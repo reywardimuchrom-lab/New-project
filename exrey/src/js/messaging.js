@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 import * as s14e from './s14e-serializer.js';
@@ -58,7 +58,7 @@ import µb from './background.js';
 
 /******************************************************************************/
 
-// https://github.com/uBlockOrigin/uBlock-issues/issues/710
+// https://github.com/exrey/exrey-issues/issues/710
 //   Listeners have a name and a "privileged" status.
 //   The nameless default handler is always deemed "privileged".
 //   Messages from privileged ports must never relayed to listeners
@@ -196,7 +196,7 @@ const onMessage = function(request, sender, callback) {
         response = µb.readyToFilter;
         break;
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/1954
+    // https://github.com/exrey/exrey-issues/issues/1954
     //   In case of document-blocked page, navigate to blocked URL instead
     //   of forcing a reload.
     case 'reloadTab': {
@@ -479,7 +479,7 @@ const launchReporter = async function(request) {
         shouldUpdateLists.push(entry.assetKey);
     }
 
-    // https://github.com/gorhill/uBlock/commit/6efd8eb#commitcomment-107523558
+    // https://github.com/exrey/exrey/commit/6efd8eb#commitcomment-107523558
     //   Important: for whatever reason, not using `document_start` causes the
     //   Promise returned by `tabs.executeScript()` to resolve only when the
     //   associated tab is closed.
@@ -570,7 +570,7 @@ const onMessage = function(request, sender, callback) {
             permanentSwitches,
             request.srcHostname
         );
-        // https://github.com/gorhill/uBlock/issues/188
+        // https://github.com/exrey/exrey/issues/188
         cosmeticFilteringEngine.removeFromSelectorCache(
             request.srcHostname,
             'net'
@@ -704,7 +704,7 @@ const retrieveContentScriptParameters = async function(sender, request) {
         });
     }
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/688#issuecomment-748179731
+    // https://github.com/exrey/exrey-issues/issues/688#issuecomment-748179731
     //   For non-network URIs, scriptlet injection is deferred to here. The
     //   effective URL is available here in `request.url`.
     if ( logger.enabled ) {
@@ -2109,7 +2109,7 @@ const onMessage = function(request, sender, callback) {
         break;
 
     case 'subscribeTo': {
-        // https://github.com/uBlockOrigin/uBlock-issues/issues/1797
+        // https://github.com/exrey/exrey-issues/issues/1797
         if ( /^(file|https?):\/\//.test(request.location) === false ) { break; }
         const url = encodeURIComponent(request.location);
         const title = encodeURIComponent(request.title);

@@ -188,10 +188,10 @@ function rulesToDoc(clearHistory) {
             doc.setValue(rules.length !== 0 ? rules.join('\n') + '\n' : '');
             continue;
         }
-        // https://github.com/uBlockOrigin/uBlock-issues/issues/593
+        // https://github.com/exrey/exrey-issues/issues/593
         //   Ensure the text content always ends with an empty line to avoid
         //   spurious diff entries.
-        // https://github.com/uBlockOrigin/uBlock-issues/issues/657
+        // https://github.com/exrey/exrey-issues/issues/657
         //   Diff against unmodified beforeText so that the last newline can
         //   be reported in the diff and thus appended if needed.
         let beforeText = doc.getValue();
@@ -294,7 +294,7 @@ mergeView.options.revertChunk = function(
     from, fromStart, fromEnd,
     to, toStart, toEnd
 ) {
-    // https://github.com/gorhill/uBlock/issues/3611
+    // https://github.com/exrey/exrey/issues/3611
     if ( dom.attr(dom.body, 'dir') === 'rtl' ) {
         let tmp = from; from = to; to = tmp;
         tmp = fromStart; fromStart = toStart; toStart = tmp;
@@ -641,7 +641,7 @@ self.cloud.onPull = function(data, append) {
 
 /******************************************************************************/
 
-self.wikilink = 'https://github.com/gorhill/uBlock/wiki/Dashboard:-My-rules';
+self.wikilink = 'https://github.com/exrey/exrey/wiki/Dashboard:-My-rules';
 
 self.hasUnsavedData = function() {
     return mergeView.editor().isClean(cleanEditToken) === false;

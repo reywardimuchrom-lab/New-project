@@ -357,7 +357,7 @@ html:not(.mobile) .cm-search-widget .fa-icon:not(.fa-icon-ro):hover {
     display: initial;
     }
 
-/* https://github.com/uBlockOrigin/uBlock-issues/issues/3645 */
+/* https://github.com/exrey/uBlock-issues/issues/3645 */
 .CodeMirror-vscrollbar {
     pointer-events: initial !important;
     }
