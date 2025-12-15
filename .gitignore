@@ -150,3 +150,8 @@ local.properties
 captures/
 .externalNativeBuild
 .cxx
+
+# exrey (uBlock Origin) build artifacts
+node_modules/
+tmp/
+.deps/
