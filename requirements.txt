@@ -3,3 +3,4 @@ apkutils>=1.0.0
 click>=8.1.0
 loguru>=0.7.0
 tqdm>=4.65.0
+Pillow>=9.0.0
