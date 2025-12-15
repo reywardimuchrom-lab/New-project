@@ -134,3 +134,19 @@ output/
 decompiled/
 *.apk
 *.dex
+
+# Android wrapper generator (output directories)
+/android_wrapper/
+test_output/
+build_test/
+*_wrapper/
+*_wrapper_test/
+
+# Android build artifacts
+*.iml
+local.properties
+.gradle/
+.idea/
+captures/
+.externalNativeBuild
+.cxx
