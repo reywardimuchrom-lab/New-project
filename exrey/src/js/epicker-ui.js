@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 /* global CodeMirror */
@@ -174,7 +174,7 @@ const candidateFromFilterChoice = function(filterChoice) {
     let { slot, filters } = filterChoice;
     let filter = filters[slot];
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/47
+    // https://github.com/exrey/exrey-issues/issues/47
     for ( const elem of $storAll('#candidateFilters li') ) {
         elem.classList.remove('active');
     }
@@ -232,7 +232,7 @@ const cosmeticCandidatesFromFilterChoice = function(filterChoice) {
         for ( let i = slot; i < filters.length; i++ ) {
             filter = filters[i].slice(2);
             // Remove id, nth-of-type
-            // https://github.com/uBlockOrigin/uBlock-issues/issues/162
+            // https://github.com/exrey/exrey-issues/issues/162
             //   Mind escaped periods: they do not denote a class identifier.
             if ( (specificity & 0b0001) === 0 ) {
                 filter = filter.replace(/:nth-of-type\(\d+\)/, '');
@@ -255,7 +255,7 @@ const cosmeticCandidatesFromFilterChoice = function(filterChoice) {
                 }
             }
             // Remove all classes when an id exists.
-            // https://github.com/uBlockOrigin/uBlock-issues/issues/162
+            // https://github.com/exrey/exrey-issues/issues/162
             //   Mind escaped periods: they do not denote a class identifier.
             if ( filter.charAt(0) === '#' ) {
                 filter = filter.replace(/([^\\])\..+$/, '$1');

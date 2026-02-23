@@ -16,7 +16,7 @@ body {
 .body {
     flex-shrink: 0;
     }
-/* https://github.com/uBlockOrigin/uBlock-issues/issues/3058 */
+/* https://github.com/exrey/uBlock-issues/issues/3058 */
 :root.mobile body {
     min-height: unset;
     }

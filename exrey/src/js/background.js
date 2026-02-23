@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 /******************************************************************************/
@@ -184,7 +184,7 @@ const µBlock = {  // jshint ignore:line
         selfieMagic: 60,    // Increase when selfie format changes
     },
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/759#issuecomment-546654501
+    // https://github.com/exrey/exrey-issues/issues/759#issuecomment-546654501
     //   The assumption is that cache storage state reflects whether
     //   compiled or selfie assets are available or not. The properties
     //   below is to no longer rely on this assumption -- though it's still
@@ -221,7 +221,7 @@ const µBlock = {  // jshint ignore:line
     inMemoryFilters: [],
     inMemoryFiltersCompiled: '',
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/974
+    // https://github.com/exrey/exrey-issues/issues/974
     //   This can be used to defer filtering decision-making.
     readyToFilter: false,
 
@@ -292,7 +292,7 @@ const µBlock = {  // jshint ignore:line
         this.tabDomain = domainFromHostname(this.tabHostname);
     }
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/459
+    // https://github.com/exrey/exrey-issues/issues/459
     //   In case of a request for frame and if ever no context is specified,
     //   assume the origin of the context is the same as the request itself.
     fromWebrequestDetails(details) {

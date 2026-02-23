@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock₀",
+    "message": "exrey",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -352,7 +352,7 @@
     "description": ""
   },
   "settingsAdvancedUserPrompt": {
-    "message": "Es esmu pieredzējis lietotājs (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>Vēlams izlasīt</a>)",
+    "message": "Es esmu pieredzējis lietotājs (<a href='https://github.com/exrey/exrey/wiki/Advanced-user-features'>Vēlams izlasīt</a>)",
     "description": "Checkbox to let user access advanced, technical features"
   },
   "settingsPrefetchingDisabledPrompt": {
@@ -393,11 +393,11 @@
   },
   "settingsNoCSPReportsPrompt": {
     "message": "Bloķēt CSP atskaites",
-    "description": "background information: https://github.com/gorhill/uBlock/issues/3150"
+    "description": "background information: https://github.com/exrey/exrey/issues/3150"
   },
   "settingsUncloakCnamePrompt": {
     "message": "Atslēpt kanoniskos nosaukumus",
-    "description": "background information: https://github.com/uBlockOrigin/uBlock-issues/issues/1513"
+    "description": "background information: https://github.com/exrey/exrey-issues/issues/1513"
   },
   "settingsAdvanced": {
     "message": "Paplašināti",
@@ -608,7 +608,7 @@
     "description": "English: List of your dynamic filtering rules."
   },
   "rulesFormatHint": {
-    "message": "Noteikumu sintakse: <code>avots mērķis tips rīcība</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>pilna dokumentācija</a>).",
+    "message": "Noteikumu sintakse: <code>avots mērķis tips rīcība</code> (<a href='https://github.com/exrey/exrey/wiki/Dynamic-filtering:-rule-syntax'>pilna dokumentācija</a>).",
     "description": "English: dynamic rule syntax and full documentation."
   },
   "rulesSort": {
@@ -688,7 +688,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "uBlock Origin wiki: žurnāls",
+    "message": "exrey wiki: žurnāls",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -928,7 +928,7 @@
     "description": "Header of 'Filter issues' section in Support pane"
   },
   "supportS3P1": {
-    "message": "Par aizturēšanas nepilnībām noteiktās vietnēs var ziņot nepilnību uzskaitē <span data-url=\"https://github.com/uBlockOrigin/uAssets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code></span>.",
+    "message": "Par aizturēšanas nepilnībām noteiktās vietnēs var ziņot nepilnību uzskaitē <span data-url=\"https://github.com/exrey/exrey-assets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code></span>.",
     "description": "First paragraph of 'Filter issues' section in Support pane"
   },
   "supportS3P2": {
@@ -944,7 +944,7 @@
     "description": "Header of 'Bug report' section in Support pane"
   },
   "supportS4P1": {
-    "message": "Par uBlock Origin nepilnībām jāziņo <span data-url=\"https://github.com/uBlockOrigin/uBlock-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code></span>.",
+    "message": "Par uBlock Origin nepilnībām jāziņo <span data-url=\"https://github.com/exrey/exrey-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code></span>.",
     "description": "First paragraph of 'Bug report' section in Support pane"
   },
   "supportS5H": {

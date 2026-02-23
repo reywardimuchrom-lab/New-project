@@ -9,7 +9,7 @@
       "32": "img/icon_32.png",
       "64": "img/icon_64.png"
     },
-    "default_title": "uBlock Origin",
+    "default_title": "exrey",
     "default_popup": "popup-fenix.html"
   },
   "commands": {
@@ -67,9 +67,9 @@
     },
     {
       "matches": [
-        "https://github.com/uBlockOrigin/*",
-        "https://ublockorigin.github.io/*",
-        "https://*.reddit.com/r/uBlockOrigin/*"
+        "https://github.com/exrey/*",
+        "https://exrey.github.io/*",
+        "https://*.reddit.com/r/exrey/*"
       ],
       "js": [
         "/js/scriptlets/updater.js"
@@ -90,7 +90,7 @@
   "incognito": "split",
   "manifest_version": 2,
   "minimum_chrome_version": "93.0",
-  "name": "uBlock Origin",
+  "name": "exrey",
   "options_ui": {
     "page": "dashboard.html",
     "open_in_tab": true
@@ -107,7 +107,7 @@
     "webRequestBlocking",
     "<all_urls>"
   ],
-  "short_name": "uBlock₀",
+  "short_name": "exrey",
   "storage": {
     "managed_schema": "managed_storage.json"
   },

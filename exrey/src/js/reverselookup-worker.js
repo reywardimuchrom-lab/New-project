@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 /******************************************************************************/
@@ -25,7 +25,7 @@ let listEntries = Object.create(null);
 
 /******************************************************************************/
 
-// https://github.com/uBlockOrigin/uBlock-issues/issues/2092
+// https://github.com/exrey/exrey-issues/issues/2092
 //   Order of ids matters
 
 const extractBlocks = function(content, ...ids) {
@@ -62,8 +62,8 @@ const fromNetFilter = function(details) {
             pos = content.indexOf(compiledFilter, pos);
             if ( pos === -1 ) { break; }
             // We need an exact match.
-            // https://github.com/gorhill/uBlock/issues/1392
-            // https://github.com/gorhill/uBlock/issues/835
+            // https://github.com/exrey/exrey/issues/1392
+            // https://github.com/exrey/exrey/issues/835
             const notFound = pos !== 0 && content.charCodeAt(pos - 1) !== 0x0A;
             pos += compiledFilter.length;
             if (
@@ -120,7 +120,7 @@ const fromExtendedFilter = function(details) {
     const { hostname, pathname } = url;
 
     // The longer the needle, the lower the number of false positives.
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/1139
+    // https://github.com/exrey/exrey-issues/issues/1139
     //   Mind that there is no guarantee a selector has `\w` characters.
     const needle = (details.needle || selector).match(/\w+|\*/g).reduce(function(a, b) {
         return a.length > b.length ? a : b;
@@ -133,7 +133,7 @@ const fromExtendedFilter = function(details) {
             suffix
         );
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/803
+    // https://github.com/exrey/exrey-issues/issues/803
     //   Support looking up selectors of the form `*##...`
     const reHostname = regexFromLabels('^', hostname, '$');
     let reEntity;
@@ -213,7 +213,7 @@ const fromExtendedFilter = function(details) {
             const fargs = JSON.parse(content.slice(beg, end));
             const filterType = fargs[0];
 
-            // https://github.com/gorhill/uBlock/issues/2763
+            // https://github.com/exrey/exrey/issues/2763
             if ( filterType === 0 && details.ignoreGeneric ) { continue; }
 
             // Do not confuse cosmetic filters with HTML ones.

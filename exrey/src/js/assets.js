@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 import * as sfp from './static-filtering-parser.js';
@@ -294,7 +294,7 @@ assets.fetch = function(url, options = {}) {
         xhr.abort();
     };
 
-    // https://github.com/gorhill/uBlock/issues/2526
+    // https://github.com/exrey/exrey/issues/2526
     // - Timeout only when there is no progress.
     const onProgressEvent = function(ev) {
         if ( ev.loaded === contentLoaded ) { return; }
@@ -331,13 +331,13 @@ assets.fetchText = async function(url) {
     const isExternal = reIsExternalPath.test(url);
     let actualUrl = isExternal ? url : vAPI.getURL(url);
 
-    // https://github.com/gorhill/uBlock/issues/2592
+    // https://github.com/exrey/exrey/issues/2592
     //   Force browser cache to be bypassed, but only for resources which have
     //   been fetched more than one hour ago.
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/682#issuecomment-515197130
+    // https://github.com/exrey/exrey-issues/issues/682#issuecomment-515197130
     //   Provide filter list authors a way to completely bypass
     //   the browser cache.
-    // https://github.com/gorhill/uBlock/commit/048bfd251c9b#r37972005
+    // https://github.com/exrey/exrey/commit/048bfd251c9b#r37972005
     //   Use modulo prime numbers to avoid generating the same token at the
     //   same time across different days.
     // Do not bypass browser cache if we are asked to be gentle on remote
@@ -386,7 +386,7 @@ assets.fetchText = async function(url) {
 
 /******************************************************************************/
 
-// https://github.com/gorhill/uBlock/issues/3331
+// https://github.com/exrey/exrey/issues/3331
 //   Support the seamless loading of sublists.
 
 assets.fetchFilterList = async function(mainlistURL) {
@@ -418,7 +418,7 @@ assets.fetchFilterList = async function(mainlistURL) {
 
     const sublistURLs = new Set();
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/1113
+    // https://github.com/exrey/exrey-issues/issues/1113
     //   Process only `!#include` directives which are not excluded by an
     //   `!#if` directive.
     const processIncludeDirectives = function(results) {
@@ -766,7 +766,7 @@ async function assetCacheWrite(assetKey, content, options = {}) {
     saveAssetCacheRegistry(3);
 
     const result = { assetKey, content };
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/248
+    // https://github.com/exrey/exrey-issues/issues/248
     if ( options.silent !== true ) {
         fireNotification('after-asset-updated', result);
     }
@@ -909,7 +909,7 @@ assets.get = async function(assetKey, options = {}) {
         return readUserAsset(assetKey);
     }
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/3761
+    // https://github.com/exrey/exrey-issues/issues/3761
     if ( µb.readyToFilter !== true ) {
         if ( options.favorLocal === undefined ) {
             options.favorLocal = true;
@@ -1378,7 +1378,7 @@ async function getUpdateCandidates() {
             assetCacheRemove(assetKey);
         }
     }
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/1165
+    // https://github.com/exrey/exrey-issues/issues/1165
     //   Update most obsolete asset first.
     toUpdate.sort((a, b) => {
         const ta = cacheDict[a] !== undefined ? cacheDict[a].writeTime : 0;

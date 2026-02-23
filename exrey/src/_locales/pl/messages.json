@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "exrey",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -393,11 +393,11 @@
   },
   "settingsNoCSPReportsPrompt": {
     "message": "Blokuj raporty CSP",
-    "description": "background information: https://github.com/gorhill/uBlock/issues/3150"
+    "description": "background information: https://github.com/exrey/exrey/issues/3150"
   },
   "settingsUncloakCnamePrompt": {
     "message": "Pokaż rzeczywistą nazwę domeny (CNAME)",
-    "description": "background information: https://github.com/uBlockOrigin/uBlock-issues/issues/1513"
+    "description": "background information: https://github.com/exrey/exrey-issues/issues/1513"
   },
   "settingsAdvanced": {
     "message": "Zaawansowane",
@@ -608,7 +608,7 @@
     "description": "English: List of your dynamic filtering rules."
   },
   "rulesFormatHint": {
-    "message": "Składnia reguły: <code>źródło cel typ akcja</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>pełna dokumentacja</a>).",
+    "message": "Składnia reguły: <code>źródło cel typ akcja</code> (<a href='https://github.com/exrey/exrey/wiki/Dynamic-filtering:-rule-syntax'>pełna dokumentacja</a>).",
     "description": "English: dynamic rule syntax and full documentation."
   },
   "rulesSort": {
@@ -688,7 +688,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "uBlock Origin wiki: Rejestrator (ang.)",
+    "message": "exrey wiki: Rejestrator (ang.)",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -928,7 +928,7 @@
     "description": "Header of 'Filter issues' section in Support pane"
   },
   "supportS3P1": {
-    "message": "Zgłoś problemy z filtrami na poszczególnych stronach na <span data-url=\"https://github.com/uBlockOrigin/uAssets/issues?q=is%3Aissue\"> trackerze błędów <code>uBlockOrigin/uAssets</code></span>. <u>Wymaga konta GitHub.</u>",
+    "message": "Zgłoś problemy z filtrami na poszczególnych stronach na <span data-url=\"https://github.com/exrey/exrey-assets/issues?q=is%3Aissue\"> trackerze błędów <code>uBlockOrigin/uAssets</code></span>. <u>Wymaga konta GitHub.</u>",
     "description": "First paragraph of 'Filter issues' section in Support pane"
   },
   "supportS3P2": {
@@ -944,7 +944,7 @@
     "description": "Header of 'Bug report' section in Support pane"
   },
   "supportS4P1": {
-    "message": "Zgłoś problemy związane bezpośrednio z uBlock Origin na <span data-url=\"https://github.com/uBlockOrigin/uBlock-issues/issues?q=is%3Aissue\">trackerze błędów <code>uBlockOrigin/uBlock-issue</code></span>. <u>Wymaga konta GitHub.</u>",
+    "message": "Zgłoś problemy związane bezpośrednio z uBlock Origin na <span data-url=\"https://github.com/exrey/exrey-issues/issues?q=is%3Aissue\">trackerze błędów <code>uBlockOrigin/uBlock-issue</code></span>. <u>Wymaga konta GitHub.</u>",
     "description": "First paragraph of 'Bug report' section in Support pane"
   },
   "supportS5H": {
@@ -1148,7 +1148,7 @@
     "description": "Used as a title for the document-blocked page"
   },
   "docblockedPrompt1": {
-    "message": "uBlock Origin zablokował wczytywanie następującej strony:",
+    "message": "exrey zablokował wczytywanie następującej strony:",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {

@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "exrey",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -352,7 +352,7 @@
     "description": ""
   },
   "settingsAdvancedUserPrompt": {
-    "message": "Sono un utente avanzato (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>Lettura obbligatoria</a>)",
+    "message": "Sono un utente avanzato (<a href='https://github.com/exrey/exrey/wiki/Advanced-user-features'>Lettura obbligatoria</a>)",
     "description": "Checkbox to let user access advanced, technical features"
   },
   "settingsPrefetchingDisabledPrompt": {
@@ -393,11 +393,11 @@
   },
   "settingsNoCSPReportsPrompt": {
     "message": "Blocca i report CSP",
-    "description": "background information: https://github.com/gorhill/uBlock/issues/3150"
+    "description": "background information: https://github.com/exrey/exrey/issues/3150"
   },
   "settingsUncloakCnamePrompt": {
     "message": "Rivela i nomi canonici",
-    "description": "background information: https://github.com/uBlockOrigin/uBlock-issues/issues/1513"
+    "description": "background information: https://github.com/exrey/exrey-issues/issues/1513"
   },
   "settingsAdvanced": {
     "message": "Avanzate",
@@ -608,7 +608,7 @@
     "description": "English: List of your dynamic filtering rules."
   },
   "rulesFormatHint": {
-    "message": "Sintassi per le regole: <code>sorgente destinazione tipo azione</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>documentazione completa</a>).",
+    "message": "Sintassi per le regole: <code>sorgente destinazione tipo azione</code> (<a href='https://github.com/exrey/exrey/wiki/Dynamic-filtering:-rule-syntax'>documentazione completa</a>).",
     "description": "English: dynamic rule syntax and full documentation."
   },
   "rulesSort": {
@@ -928,7 +928,7 @@
     "description": "Header of 'Filter issues' section in Support pane"
   },
   "supportS3P1": {
-    "message": "Segnala problemi dei filtri con siti specifici al <span data-url=\"https://github.com/uBlockOrigin/uAssets/issues?q=is%3Aissue\">tracciatore di bug <code>uBlockOrigin/uAssets</code></span>. Richiede un account GitHub.",
+    "message": "Segnala problemi dei filtri con siti specifici al <span data-url=\"https://github.com/exrey/exrey-assets/issues?q=is%3Aissue\">tracciatore di bug <code>uBlockOrigin/uAssets</code></span>. Richiede un account GitHub.",
     "description": "First paragraph of 'Filter issues' section in Support pane"
   },
   "supportS3P2": {
@@ -944,7 +944,7 @@
     "description": "Header of 'Bug report' section in Support pane"
   },
   "supportS4P1": {
-    "message": "Segnala problemi di uBlock Origin stesso al <span data-url=\"https://github.com/uBlockOrigin/uBlock-issues/issues?q=is%3Aissue\">tracciatore di bug <code>uBlockOrigin/uBlock-issue</code></span>. Richiede un account GitHub.",
+    "message": "Segnala problemi di uBlock Origin stesso al <span data-url=\"https://github.com/exrey/exrey-issues/issues?q=is%3Aissue\">tracciatore di bug <code>uBlockOrigin/uBlock-issue</code></span>. Richiede un account GitHub.",
     "description": "First paragraph of 'Bug report' section in Support pane"
   },
   "supportS5H": {

@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "exrey",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -352,7 +352,7 @@
     "description": ""
   },
   "settingsAdvancedUserPrompt": {
-    "message": "আমি একজন উন্নত ব্যবহারকারী (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>পড়া আবশ্যক</a>)",
+    "message": "আমি একজন উন্নত ব্যবহারকারী (<a href='https://github.com/exrey/exrey/wiki/Advanced-user-features'>পড়া আবশ্যক</a>)",
     "description": "Checkbox to let user access advanced, technical features"
   },
   "settingsPrefetchingDisabledPrompt": {
@@ -393,11 +393,11 @@
   },
   "settingsNoCSPReportsPrompt": {
     "message": "CSP প্রতিবেদন অবরুদ্ধ করুন",
-    "description": "background information: https://github.com/gorhill/uBlock/issues/3150"
+    "description": "background information: https://github.com/exrey/exrey/issues/3150"
   },
   "settingsUncloakCnamePrompt": {
     "message": "Canonical Name এর উন্মোচন",
-    "description": "background information: https://github.com/uBlockOrigin/uBlock-issues/issues/1513"
+    "description": "background information: https://github.com/exrey/exrey-issues/issues/1513"
   },
   "settingsAdvanced": {
     "message": "অ্যাডভান্সড",
@@ -608,7 +608,7 @@
     "description": "English: List of your dynamic filtering rules."
   },
   "rulesFormatHint": {
-    "message": "শব্দবিন্যাসের নিয়ম: <code>source destination type action</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>সম্পূর্ণ নথিপত্র</a>)।",
+    "message": "শব্দবিন্যাসের নিয়ম: <code>source destination type action</code> (<a href='https://github.com/exrey/exrey/wiki/Dynamic-filtering:-rule-syntax'>সম্পূর্ণ নথিপত্র</a>)।",
     "description": "English: dynamic rule syntax and full documentation."
   },
   "rulesSort": {
@@ -912,7 +912,7 @@
     "description": "Header of 'Documentation' section in Support pane"
   },
   "supportS1P1": {
-    "message": "uBlock Origin এর সমস্ত ফিচার সম্পর্কে জানতে <code>uBlock/wiki</code> এ ডকুমেন্টেশন পড়ুন।",
+    "message": "exrey এর সমস্ত ফিচার সম্পর্কে জানতে <code>uBlock/wiki</code> এ ডকুমেন্টেশন পড়ুন।",
     "description": "First paragraph of 'Documentation' section in Support pane"
   },
   "supportS2H": {
@@ -928,7 +928,7 @@
     "description": "Header of 'Filter issues' section in Support pane"
   },
   "supportS3P1": {
-    "message": "নির্দিষ্ট ওয়েবসাইটের ফিল্টার সমস্যাগুলি <span data-url=\"https://github.com/uBlockOrigin/uAssets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code> ইস্যু ট্র্যাকারে রিপোর্ট করুন<span> <u>একটি GitHub অ্যাকাউন্ট প্রয়োজন৷</u>",
+    "message": "নির্দিষ্ট ওয়েবসাইটের ফিল্টার সমস্যাগুলি <span data-url=\"https://github.com/exrey/exrey-assets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code> ইস্যু ট্র্যাকারে রিপোর্ট করুন<span> <u>একটি GitHub অ্যাকাউন্ট প্রয়োজন৷</u>",
     "description": "First paragraph of 'Filter issues' section in Support pane"
   },
   "supportS3P2": {
@@ -944,7 +944,7 @@
     "description": "Header of 'Bug report' section in Support pane"
   },
   "supportS4P1": {
-    "message": "<span data-url=\"https://github.com/uBlockOrigin/uBlock-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code> ইস্যু ট্র্যাকার</span> এ uBlock অরিজিন সংক্রান্ত সমস্যাগুলি রিপোর্ট করুন। <u>একটি GitHub অ্যাকাউন্ট প্রয়োজন৷</u>৷",
+    "message": "<span data-url=\"https://github.com/exrey/exrey-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code> ইস্যু ট্র্যাকার</span> এ uBlock অরিজিন সংক্রান্ত সমস্যাগুলি রিপোর্ট করুন। <u>একটি GitHub অ্যাকাউন্ট প্রয়োজন৷</u>৷",
     "description": "First paragraph of 'Bug report' section in Support pane"
   },
   "supportS5H": {
@@ -996,7 +996,7 @@
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option3": {
-    "message": "uBlock Origin শনাক্ত করে",
+    "message": "exrey শনাক্ত করে",
     "description": "An entry in the widget used to select the type of issue"
   },
   "supportS6Select1Option4": {

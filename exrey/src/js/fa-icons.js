@@ -23,7 +23,7 @@
 
 export const faIconsInit = (( ) => {
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/1196
+    // https://github.com/exrey/exrey-issues/issues/1196
     const svgIcons = new Map([
         // See /img/fontawesome/fontawesome-defs.svg
         [ 'angle-up',             { viewBox: '0 0  998  582', path: 'm 998,499 q 0,13 -10,23 l -50,50 q -10,10 -23,10 -13,0 -23,-10 L 499,179 106,572 Q 96,582 83,582 70,582 60,572 L 10,522 Q 0,512 0,499 0,486 10,476 L 476,10 q 10,-10 23,-10 13,0 23,10 l 466,466 q 10,10 10,23 z' } ],

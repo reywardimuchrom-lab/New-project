@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "exrey",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -393,11 +393,11 @@
   },
   "settingsNoCSPReportsPrompt": {
     "message": "Blokker CSP-rapporter",
-    "description": "background information: https://github.com/gorhill/uBlock/issues/3150"
+    "description": "background information: https://github.com/exrey/exrey/issues/3150"
   },
   "settingsUncloakCnamePrompt": {
     "message": "CNAME-avdekking",
-    "description": "background information: https://github.com/uBlockOrigin/uBlock-issues/issues/1513"
+    "description": "background information: https://github.com/exrey/exrey-issues/issues/1513"
   },
   "settingsAdvanced": {
     "message": "Avansert",
@@ -608,7 +608,7 @@
     "description": "English: List of your dynamic filtering rules."
   },
   "rulesFormatHint": {
-    "message": "Regelsyntaks: <code>kilde destinasjon type handling</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>full dokumentasjon</a>).",
+    "message": "Regelsyntaks: <code>kilde destinasjon type handling</code> (<a href='https://github.com/exrey/exrey/wiki/Dynamic-filtering:-rule-syntax'>full dokumentasjon</a>).",
     "description": "English: dynamic rule syntax and full documentation."
   },
   "rulesSort": {
@@ -688,7 +688,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "uBlock Origin wiki: Loggen",
+    "message": "exrey wiki: Loggen",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -928,7 +928,7 @@
     "description": "Header of 'Filter issues' section in Support pane"
   },
   "supportS3P1": {
-    "message": "Rapporter filterproblemer med bestemte nettsteder til <span data-url=\"https://github.com/uBlockOrigin/uAssets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code> problemsporing</span>. <u>Krever en GitHub-konto.</u>",
+    "message": "Rapporter filterproblemer med bestemte nettsteder til <span data-url=\"https://github.com/exrey/exrey-assets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code> problemsporing</span>. <u>Krever en GitHub-konto.</u>",
     "description": "First paragraph of 'Filter issues' section in Support pane"
   },
   "supportS3P2": {
@@ -944,7 +944,7 @@
     "description": "Header of 'Bug report' section in Support pane"
   },
   "supportS4P1": {
-    "message": "Rapporter problemer med selve uBlock Origin til <span data-url=\"https://github.com/uBlockOrigin/uBlock-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code> problemsporing</span>. <u>Krever en GitHub-konto.</u>",
+    "message": "Rapporter problemer med selve uBlock Origin til <span data-url=\"https://github.com/exrey/exrey-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code> problemsporing</span>. <u>Krever en GitHub-konto.</u>",
     "description": "First paragraph of 'Bug report' section in Support pane"
   },
   "supportS5H": {
@@ -1060,7 +1060,7 @@
     "description": "Shown in the About pane"
   },
   "aboutCDNs": {
-    "message": "uBlock Origins egne filterlister finnes fritt tilgjengelig hos følgende <a href=\"https://wikipedia.org/wiki/Content_delivery_network\">CDN-er</a>:",
+    "message": "exreys egne filterlister finnes fritt tilgjengelig hos følgende <a href=\"https://wikipedia.org/wiki/Content_delivery_network\">CDN-er</a>:",
     "description": "Shown in the About pane"
   },
   "aboutCDNsInfo": {
@@ -1148,7 +1148,7 @@
     "description": "Used as a title for the document-blocked page"
   },
   "docblockedPrompt1": {
-    "message": "uBlock Origin har forhindret lasting av følgende side:",
+    "message": "exrey har forhindret lasting av følgende side:",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {

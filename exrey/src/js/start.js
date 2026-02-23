@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 import './vapi-common.js';
@@ -164,7 +164,7 @@ const onVersionReady = async lastVersion => {
 
 /******************************************************************************/
 
-// https://github.com/uBlockOrigin/uBlock-issues/issues/1433
+// https://github.com/exrey/exrey-issues/issues/1433
 //   Allow admins to add their own trusted-site directives.
 
 const onNetWhitelistReady = (netWhitelistRaw, adminExtra) => {
@@ -253,7 +253,7 @@ const onUserSettingsReady = fetched => {
         });
     }
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/1513
+    // https://github.com/exrey/exrey-issues/issues/1513
     if (
         vAPI.net.canUncloakCnames &&
         µb.userSettings.cnameUncloakEnabled === false
@@ -266,7 +266,7 @@ const onUserSettingsReady = fetched => {
 
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1588916
 //   Save magic format numbers into the cache storage itself.
-// https://github.com/uBlockOrigin/uBlock-issues/issues/1365
+// https://github.com/exrey/exrey-issues/issues/1365
 //   Wait for removal of invalid cached data to be completed.
 
 const onCacheSettingsReady = async (fetched = {}) => {
@@ -326,7 +326,7 @@ const onHiddenSettingsReady = async ( ) => {
 /******************************************************************************/
 
 const onFirstFetchReady = (fetched, adminExtra) => {
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/507
+    // https://github.com/exrey/exrey-issues/issues/507
     //   Firefox-specific: somehow `fetched` is undefined under certain
     //   circumstances even though we asked to load with default values.
     if ( fetched instanceof Object === false ) {
@@ -383,7 +383,7 @@ const createDefaultProps = ( ) => {
 try {
     ubolog(`Start sequence of loading storage-based data ${Date.now()-vAPI.T0} ms after launch`);
 
-    // https://github.com/gorhill/uBlock/issues/531
+    // https://github.com/exrey/exrey/issues/531
     await µb.restoreAdminSettings();
     ubolog(`Admin settings ready ${Date.now()-vAPI.T0} ms after launch`);
 
@@ -427,7 +427,7 @@ try {
         µb.loadLocalSettings(),
     ]);
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/1547
+    // https://github.com/exrey/exrey-issues/issues/1547
     if ( lastVersionInt === 0 && vAPI.webextFlavor.soup.has('chromium') ) {
         vAPI.app.restart();
         return;
@@ -439,7 +439,7 @@ try {
 // Prime the filtering engines before first use.
 staticNetFilteringEngine.prime();
 
-// https://github.com/uBlockOrigin/uBlock-issues/issues/817#issuecomment-565730122
+// https://github.com/exrey/exrey-issues/issues/817#issuecomment-565730122
 //   Still try to load filter lists regardless of whether a serious error
 //   occurred in the previous initialization steps.
 let selfieIsValid = false;
@@ -466,7 +466,7 @@ filteringBehaviorChanged();
 
 // Final initialization steps after all needed assets are in memory.
 
-// https://github.com/uBlockOrigin/uBlock-issues/issues/974
+// https://github.com/exrey/exrey-issues/issues/974
 //   This can be used to defer filtering decision-making.
 µb.readyToFilter = true;
 
@@ -480,7 +480,7 @@ webRequest.start();
 // active tab.
 contextMenu.update();
 
-// https://github.com/uBlockOrigin/uBlock-issues/issues/717
+// https://github.com/exrey/exrey-issues/issues/717
 //   Prevent the extension from being restarted mid-session.
 browser.runtime.onUpdateAvailable.addListener(details => {
     const toInt = vAPI.app.intFromVersion;

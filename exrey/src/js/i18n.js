@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 /******************************************************************************/
@@ -43,7 +43,7 @@ if ( isBackgroundProcess !== true ) {
             : 'ltr'
     );
 
-    // https://github.com/gorhill/uBlock/issues/2084
+    // https://github.com/exrey/exrey/issues/2084
     //   Anything else than <a>, <b>, <code>, <em>, <i>, and <span> will
     //   be rendered as plain text.
     //   For <a>, only href attribute must be present, and it MUST starts with

@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 import {
@@ -224,7 +224,7 @@ const matchBucket = function(url, hostname, bucket, start) {
     for ( let line of lines ) {
         line = line.trim();
 
-        // https://github.com/gorhill/uBlock/issues/171
+        // https://github.com/exrey/exrey/issues/171
         // Skip empty lines
         if ( line === '' ) { continue; }
 
@@ -274,7 +274,7 @@ const matchBucket = function(url, hostname, bucket, start) {
             }
         }
 
-        // https://github.com/gorhill/uBlock/issues/171
+        // https://github.com/exrey/exrey/issues/171
         // Skip empty keys
         if ( key === '' ) { continue; }
 
@@ -294,7 +294,7 @@ const matchBucket = function(url, hostname, bucket, start) {
     return this.whitelistFromArray(s.split('\n'));
 };
 
-// https://github.com/gorhill/uBlock/issues/3717
+// https://github.com/exrey/exrey/issues/3717
 µb.reWhitelistBadHostname = /[^a-z0-9.\-_[\]:]/;
 µb.reWhitelistHostnameExtractor = /([a-z0-9.\-_[\]]+)(?::[\d*]+)?\/(?:[^\x00-\x20/]|$)[^\x00-\x20]*$/;
 
@@ -442,7 +442,7 @@ const matchBucket = function(url, hostname, bucket, start) {
     this.epickerArgs.target = targetElement || '';
     this.epickerArgs.zap = zap;
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/40
+    // https://github.com/exrey/exrey-issues/issues/40
     //   The element picker needs this library
     if ( zap !== true ) {
         vAPI.tabs.executeScript(tabId, {
@@ -457,7 +457,7 @@ const matchBucket = function(url, hostname, bucket, start) {
         runAt: 'document_end',
     });
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/168
+    // https://github.com/exrey/exrey-issues/issues/168
     //   Force activate the target tab once the element picker has been
     //   injected.
     vAPI.tabs.select(tabId);
@@ -465,7 +465,7 @@ const matchBucket = function(url, hostname, bucket, start) {
 
 /******************************************************************************/
 
-// https://github.com/gorhill/uBlock/issues/2033
+// https://github.com/exrey/exrey/issues/2033
 // Always set own rules, trying to be fancy to avoid setting seemingly
 // (but not really) redundant rules led to this issue.
 
@@ -507,7 +507,7 @@ const matchBucket = function(url, hostname, bucket, start) {
         this.savePermanentFirewallRules();
     }
 
-    // https://github.com/gorhill/uBlock/issues/1662
+    // https://github.com/exrey/exrey/issues/1662
     // Flush all cached `net` cosmetic filters if we are dealing with a
     // collapsible type: any of the cached entries could be a resource on the
     // target page.

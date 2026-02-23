@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 /******************************************************************************/
@@ -160,7 +160,7 @@ const hashFromStr = (type, s) => {
     return hash & 0xFFFFFF;
 };
 
-// https://github.com/gorhill/uBlock/issues/1668
+// https://github.com/exrey/exrey/issues/1668
 //   The key must be literal: unescape escaped CSS before extracting key.
 //   It's an uncommon case, so it's best to unescape only when needed.
 
@@ -356,7 +356,7 @@ CosmeticFilteringEngine.prototype.compileGenericHideSelector = function(
 
     writer.select('COSMETIC_FILTERS:GENERIC');
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/131
+    // https://github.com/exrey/exrey-issues/issues/131
     //   Support generic procedural filters as per advanced settings.
     if ( compiled.charCodeAt(0) === 0x7B /* '{' */ ) {
         if ( µb.hiddenSettings.allowGenericProceduralFilters === true ) {
@@ -470,7 +470,7 @@ CosmeticFilteringEngine.prototype.fromCompiledContent = function(reader, options
         // hash,  example.com, .promoted-tweet
         // hash,  example.*, .promoted-tweet
         //
-        // https://github.com/uBlockOrigin/uBlock-issues/issues/803
+        // https://github.com/exrey/exrey-issues/issues/803
         //   Handle specific filters meant to apply everywhere, i.e. selectors
         //   not to be injected conditionally through the DOM surveyor.
         //   hash,  *, .promoted-tweet

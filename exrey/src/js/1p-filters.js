@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 /* global CodeMirror, uBlockDashboard */
@@ -148,7 +148,7 @@ function userFiltersChanged(details = {}) {
 
 /******************************************************************************/
 
-// https://github.com/gorhill/uBlock/issues/3704
+// https://github.com/exrey/exrey/issues/3704
 //   Merge changes to user filters occurring in the background with changes
 //   made in the editor. The code assumes that no deletion occurred in the
 //   background.
@@ -312,7 +312,7 @@ self.cloud.onPull = setCloudData;
 
 /******************************************************************************/
 
-self.wikilink = 'https://github.com/gorhill/uBlock/wiki/Dashboard:-My-filters';
+self.wikilink = 'https://github.com/exrey/exrey/wiki/Dashboard:-My-filters';
 
 self.hasUnsavedData = function() {
     return currentStateChanged();
@@ -332,7 +332,7 @@ dom.on('#trustMyFilters input', 'change', userFiltersChanged);
 
     cmEditor.clearHistory();
 
-    // https://github.com/gorhill/uBlock/issues/3706
+    // https://github.com/exrey/exrey/issues/3706
     //   Save/restore cursor position
     {
         const line = await vAPI.localStorage.getItemAsync('myFiltersCursorPosition');
@@ -342,7 +342,7 @@ dom.on('#trustMyFilters input', 'change', userFiltersChanged);
         cmEditor.focus();
     }
 
-    // https://github.com/gorhill/uBlock/issues/3706
+    // https://github.com/exrey/exrey/issues/3706
     //   Save/restore cursor position
     {
         let curline = 0;
@@ -357,7 +357,7 @@ dom.on('#trustMyFilters input', 'change', userFiltersChanged);
         });
     }
 
-    // https://github.com/gorhill/uBlock/issues/3704
+    // https://github.com/exrey/exrey/issues/3704
     //   Merge changes to user filters occurring in the background
     onBroadcast(msg => {
         switch ( msg.what ) {

@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 /******************************************************************************/
@@ -24,7 +24,7 @@
 // Custom base64 codecs. These codecs are meant to encode/decode typed arrays
 // to/from strings.
 
-// https://github.com/uBlockOrigin/uBlock-issues/issues/461
+// https://github.com/exrey/exrey-issues/issues/461
 //   Provide a fallback encoding for Chromium 59 and less by issuing a plain
 //   JSON string. The fallback can be removed once min supported version is
 //   above 59.

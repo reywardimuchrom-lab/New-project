@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "exrey",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -368,7 +368,7 @@
     "description": "English: "
   },
   "settingPerSiteSwitchGroup": {
-    "message": "Waxaan ahay isticmaale horumarsan (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>akhris loo baahan yahay</a>)",
+    "message": "Waxaan ahay isticmaale horumarsan (<a href='https://github.com/exrey/exrey/wiki/Advanced-user-features'>akhris loo baahan yahay</a>)",
     "description": ""
   },
   "settingPerSiteSwitchGroupSynopsis": {
@@ -393,11 +393,11 @@
   },
   "settingsNoCSPReportsPrompt": {
     "message": "Dabeecadahan aan caadiga ahayn waa laga gudbi karaa si ku saleysan goob kasta",
-    "description": "background information: https://github.com/gorhill/uBlock/issues/3150"
+    "description": "background information: https://github.com/exrey/exrey/issues/3150"
   },
   "settingsUncloakCnamePrompt": {
     "message": "Dami shaandhaynta qurxinta",
-    "description": "background information: https://github.com/uBlockOrigin/uBlock-issues/issues/1513"
+    "description": "background information: https://github.com/exrey/exrey-issues/issues/1513"
   },
   "settingsAdvanced": {
     "message": "Advanced",
@@ -640,7 +640,7 @@
     "description": "Button in the 'Trusted sites' pane"
   },
   "whitelistExportFilename": {
-    "message": "Xeerka syntax: <code> nooca goobta loo socdo</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>full documents</a> ).",
+    "message": "Xeerka syntax: <code> nooca goobta loo socdo</code> (<a href='https://github.com/exrey/exrey/wiki/Dynamic-filtering:-rule-syntax'>full documents</a> ).",
     "description": "The default filename to use for import/export purpose"
   },
   "whitelistApply": {
@@ -1020,7 +1020,7 @@
     "description": "A checkbox to use for NSFW sites"
   },
   "supportRedact": {
-    "message": "Ka warbixi arrimaha shaandhaynta shabakadaha gaarka ah <span data-url=\"https://github.com/uBlockOrigin/uAssets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code> soo saara raadraacayaasha</span >. Wuxuu u baahan yahay akoon GitHub",
+    "message": "Ka warbixi arrimaha shaandhaynta shabakadaha gaarka ah <span data-url=\"https://github.com/exrey/exrey-assets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets</code> soo saara raadraacayaasha</span >. Wuxuu u baahan yahay akoon GitHub",
     "description": "Text for 'Redact' button"
   },
   "supportUnredact": {
@@ -1036,7 +1036,7 @@
     "description": ""
   },
   "aboutCode": {
-    "message": "Ka warbixi arrimaha uBlock Origin laftiisa <span data-url=\"https://github.com/uBlockOrigin/uBlock-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code> arin tracker</span>. Wuxuu u baahan yahay akoon GitHub",
+    "message": "Ka warbixi arrimaha uBlock Origin laftiisa <span data-url=\"https://github.com/exrey/exrey-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code> arin tracker</span>. Wuxuu u baahan yahay akoon GitHub",
     "description": "English: Source code (GPLv3)"
   },
   "aboutContributors": {

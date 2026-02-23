@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "uBlock Origin",
+    "message": "exrey",
     "description": "extension name."
   },
   "extShortDesc": {
@@ -352,7 +352,7 @@
     "description": ""
   },
   "settingsAdvancedUserPrompt": {
-    "message": "Ես հմուտ օգտվող եմ (<a href='https://github.com/gorhill/uBlock/wiki/Advanced-user-features'>կարդալը պարտադիր է</a>)",
+    "message": "Ես հմուտ օգտվող եմ (<a href='https://github.com/exrey/exrey/wiki/Advanced-user-features'>կարդալը պարտադիր է</a>)",
     "description": "Checkbox to let user access advanced, technical features"
   },
   "settingsPrefetchingDisabledPrompt": {
@@ -393,11 +393,11 @@
   },
   "settingsNoCSPReportsPrompt": {
     "message": "Արգելափակել CSP հաշվետվությունները",
-    "description": "background information: https://github.com/gorhill/uBlock/issues/3150"
+    "description": "background information: https://github.com/exrey/exrey/issues/3150"
   },
   "settingsUncloakCnamePrompt": {
     "message": "Բանալ կանոնական անունները",
-    "description": "background information: https://github.com/uBlockOrigin/uBlock-issues/issues/1513"
+    "description": "background information: https://github.com/exrey/exrey-issues/issues/1513"
   },
   "settingsAdvanced": {
     "message": "Ընդլայնված կարգավորումներ",
@@ -608,7 +608,7 @@
     "description": "English: List of your dynamic filtering rules."
   },
   "rulesFormatHint": {
-    "message": "Կանոնների շարահյուսություն՝ <code>աղբյուր նպատակակետ տեսակ գործողություն</code> (<a href='https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax'>բոլոր փաստաթղթերը</a>)։",
+    "message": "Կանոնների շարահյուսություն՝ <code>աղբյուր նպատակակետ տեսակ գործողություն</code> (<a href='https://github.com/exrey/exrey/wiki/Dynamic-filtering:-rule-syntax'>բոլոր փաստաթղթերը</a>)։",
     "description": "English: dynamic rule syntax and full documentation."
   },
   "rulesSort": {
@@ -688,7 +688,7 @@
     "description": "Tooltip for the popup panel button in the logger page"
   },
   "loggerInfoTip": {
-    "message": "uBlock Origin վիքի. Մատյան",
+    "message": "exrey վիքի. Մատյան",
     "description": "Tooltip for the top-right info label in the logger page"
   },
   "loggerClearTip": {
@@ -928,7 +928,7 @@
     "description": "Header of 'Filter issues' section in Support pane"
   },
   "supportS3P1": {
-    "message": "Հաղորդեք որոշակի կայքերի հետ կապված զտիչի խնդիրների մասին <span data-url=\"https://github.com/uBlockOrigin/uAssets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets-ի</code> խնդիրների հետագծիչի բաժնում</span>։ <u>Պահանջվում է GitHub հաշիվ։</u>",
+    "message": "Հաղորդեք որոշակի կայքերի հետ կապված զտիչի խնդիրների մասին <span data-url=\"https://github.com/exrey/exrey-assets/issues?q=is%3Aissue\"><code>uBlockOrigin/uAssets-ի</code> խնդիրների հետագծիչի բաժնում</span>։ <u>Պահանջվում է GitHub հաշիվ։</u>",
     "description": "First paragraph of 'Filter issues' section in Support pane"
   },
   "supportS3P2": {
@@ -944,7 +944,7 @@
     "description": "Header of 'Bug report' section in Support pane"
   },
   "supportS4P1": {
-    "message": "Հաղորդեք uBlock Origin-ի սեփական սխալների մասին <span data-url=\"https://github.com/uBlockOrigin/uBlock-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code> խնդիրների հետագծիչի բաժնում</span>։ <u>Պահանջվում է GitHub հաշիվ։</u>",
+    "message": "Հաղորդեք uBlock Origin-ի սեփական սխալների մասին <span data-url=\"https://github.com/exrey/exrey-issues/issues?q=is%3Aissue\"><code>uBlockOrigin/uBlock-issue</code> խնդիրների հետագծիչի բաժնում</span>։ <u>Պահանջվում է GitHub հաշիվ։</u>",
     "description": "First paragraph of 'Bug report' section in Support pane"
   },
   "supportS5H": {
@@ -1148,7 +1148,7 @@
     "description": "Used as a title for the document-blocked page"
   },
   "docblockedPrompt1": {
-    "message": "uBlock Origin֊ը կանխել է հետևյալ էջի բեռնումը՝",
+    "message": "exrey֊ը կանխել է հետևյալ էջի բեռնումը՝",
     "description": "Used in the strict-blocking page"
   },
   "docblockedPrompt2": {

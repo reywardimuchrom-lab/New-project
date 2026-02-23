@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 import * as sfp from './static-filtering-parser.js';
@@ -78,7 +78,7 @@ const initWorker = function() {
     const onListLoaded = function(details) {
         const entry = entries.get(details.assetKey);
 
-        // https://github.com/gorhill/uBlock/issues/536
+        // https://github.com/exrey/exrey/issues/536
         // Use assetKey when there is no filter list title.
 
         worker.postMessage({

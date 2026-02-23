@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 import * as cssTree from '../lib/csstree/css-tree.js';
@@ -826,7 +826,7 @@ export class AstFilterParser {
         this.reURL = /\bhttps?:\/\/\S+/;
         this.reHasPatternSpecialChars = /[*^]/;
         this.rePatternAllSpecialChars = /[*^]+|[^\x00-\x7f]+/g;
-        // https://github.com/uBlockOrigin/uBlock-issues/issues/1146
+        // https://github.com/exrey/exrey-issues/issues/1146
         //   From https://codemirror.net/doc/manual.html#option_specialChars
         this.reHasInvalidChar = /[\x00-\x1F\x7F-\x9F\xAD\u061C\u200B-\u200F\u2028\u2029\uFEFF\uFFF9-\uFFFC]/;
         this.reHostnamePatternPart = /^[^\x00-\x24\x26-\x29\x2B\x2C\x2F\x3A-\x40\x5B-\x5E\x60\x7B-\x7F]+/;
@@ -1847,9 +1847,9 @@ export class AstFilterParser {
         return this.throwHeadNode(head);
     }
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/1118#issuecomment-650730158
+    // https://github.com/exrey/exrey-issues/issues/1118#issuecomment-650730158
     //   Be ready to deal with non-punycode-able Unicode characters.
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/772
+    // https://github.com/exrey/exrey-issues/issues/772
     //   Encode Unicode characters beyond the hostname part.
     // Prepend with '*' character to prevent the browser API from refusing to
     // punycode -- this occurs when the extracted label starts with a dash.
@@ -3200,12 +3200,12 @@ export const netOptionTokenDescriptors = new Map([
 
 // Discard new ABP's `-abp-properties` directive until it is
 // implemented (if ever). Unlikely, see:
-// https://github.com/gorhill/uBlock/issues/1752
+// https://github.com/exrey/exrey/issues/1752
 
-// https://github.com/gorhill/uBlock/issues/2624
+// https://github.com/exrey/exrey/issues/2624
 //   Convert Adguard's `-ext-has='...'` into uBO's `:has(...)`.
 
-// https://github.com/uBlockOrigin/uBlock-issues/issues/89
+// https://github.com/exrey/exrey-issues/issues/89
 //   Do not discard unknown pseudo-elements.
 
 export class ExtSelectorCompiler {
@@ -3275,7 +3275,7 @@ export class ExtSelectorCompiler {
             'part',
             'slotted',
         ]);
-        // https://github.com/gorhill/uBlock/issues/2793
+        // https://github.com/exrey/exrey/issues/2793
         this.normalizedOperators = new Map([
             [ '-abp-has', 'has' ],
             [ '-abp-contains', 'has-text' ],
@@ -3340,7 +3340,7 @@ export class ExtSelectorCompiler {
     compile(raw, out, compileOptions = {}) {
         this.asProcedural = compileOptions.asProcedural === true;
 
-        // https://github.com/gorhill/uBlock/issues/952
+        // https://github.com/exrey/exrey/issues/952
         //   Find out whether we are dealing with an Adguard-specific cosmetic
         //   filter, and if so, translate it if supported, or discard it if not
         //   supported.
@@ -3558,9 +3558,9 @@ export class ExtSelectorCompiler {
         }
     }
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/2300
+    // https://github.com/exrey/exrey-issues/issues/2300
     //   Unquoted attribute values are parsed as Identifier instead of String.
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/3127
+    // https://github.com/exrey/exrey-issues/issues/3127
     //   Escape [\t\n\v\f\r]
     astSerializePart(part) {
         const out = [];
@@ -4119,9 +4119,9 @@ export class ExtSelectorCompiler {
         if ( s === '' ) { return s; }
     }
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/668
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/1693
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/1811
+    // https://github.com/exrey/exrey-issues/issues/668
+    // https://github.com/exrey/exrey-issues/issues/1693
+    // https://github.com/exrey/exrey-issues/issues/1811
     //   Forbid instances of:
     //   - `image-set(`
     //   - `url(`

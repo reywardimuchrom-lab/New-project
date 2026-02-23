@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 import { dom, qs$, qsa$ } from './dom.js';
@@ -58,7 +58,7 @@ const allHostnameRows = [];
 let cachedPopupHash = '';
 let forceReloadFlag = 0;
 
-// https://github.com/gorhill/uBlock/issues/2550
+// https://github.com/exrey/exrey/issues/2550
 // Solution inspired from
 // - https://bugs.chromium.org/p/chromium/issues/detail?id=683314
 // - https://bugzilla.mozilla.org/show_bug.cgi?id=1332714#c17
@@ -170,7 +170,7 @@ const formatNumber = function(count) {
         return intlNumberFormat.format(count);
     }
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/1027#issuecomment-629696676
+    // https://github.com/exrey/exrey-issues/issues/1027#issuecomment-629696676
     //   For platforms which do not support proper number formatting, use
     //   a poor's man compact form, which unfortunately is not i18n-friendly.
     count /= 1000000;
@@ -704,7 +704,7 @@ dom.on('.dismiss', 'click', ( ) => {
 
 /******************************************************************************/
 
-// https://github.com/gorhill/uBlock/issues/2889
+// https://github.com/exrey/exrey/issues/2889
 //   Use tooltip for ARIA purpose.
 
 const renderTooltips = function(selector) {
@@ -797,7 +797,7 @@ let renderOnce = function() {
         dom.attr('[title]', 'title', null);
     }
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/22
+    // https://github.com/exrey/exrey-issues/issues/22
     if ( popupData.advancedUserEnabled !== true ) {
         dom.attr('#firewall [title][data-src]', 'title', null);
     }
@@ -820,7 +820,7 @@ let renderOnce = function() {
 const renderPopupLazy = (( ) => {
     let mustRenderCosmeticFilteringBadge = true;
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/756
+    // https://github.com/exrey/exrey-issues/issues/756
     //   Launch potentially expensive hidden elements-counting scriptlet on
     //   demand only.
     {
@@ -1186,7 +1186,7 @@ dom.on('#refresh', 'click', ev => {
     reloadTab(ev.ctrlKey || ev.metaKey || ev.shiftKey);
 });
 
-// https://github.com/uBlockOrigin/uBlock-issues/issues/672
+// https://github.com/exrey/exrey-issues/issues/672
 dom.on(document, 'keydown', ev => {
     if ( ev.isComposing ) { return; }
     let bypassCache = false;
@@ -1268,7 +1268,7 @@ const setSpecificExpand = function(domain, state, internal = false) {
 dom.on('[data-i18n="popupAnyRulePrompt"]', 'click', ev => {
     // Special display mode: in its own tab/window, with no vertical restraint.
     // Useful to take snapshots of the whole list of domains -- example:
-    //   https://github.com/gorhill/uBlock/issues/736#issuecomment-178879944
+    //   https://github.com/exrey/exrey/issues/736#issuecomment-178879944
     if ( ev.shiftKey && ev.ctrlKey ) {
         messaging.send('popupPanel', {
             what: 'gotoURL',
@@ -1362,7 +1362,7 @@ const toggleHostnameSwitch = async function(ev) {
 
 */
 
-// https://github.com/uBlockOrigin/uBlock-issues/issues/2145
+// https://github.com/exrey/exrey-issues/issues/2145
 //   Ignore events from auto-repeating keys
 
 {

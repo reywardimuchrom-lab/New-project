@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 function getActualTheme(nominalTheme) {
@@ -113,7 +113,7 @@ function setAccentColor(
 }
 
 {
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/1044
+    // https://github.com/exrey/exrey-issues/issues/1044
     //   Offer the possibility to bypass uBO's default styling
     vAPI.messaging.send('dom', { what: 'uiStyles' }).then(response => {
         if ( typeof response !== 'object' || response === null ) { return; }

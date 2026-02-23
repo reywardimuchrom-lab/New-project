@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 import { StaticExtFilteringHostnameDB } from './static-ext-filtering-db.js';
@@ -382,7 +382,7 @@ htmlFilteringEngine.retrieve = function(fctxt) {
     filterDB.retrieveGenerics(all);
     if ( all.size === 0 ) { return; }
 
-    // https://github.com/gorhill/uBlock/issues/2835
+    // https://github.com/exrey/exrey/issues/2835
     //   Do not filter if the site is under an `allow` rule.
     if ( µb.userSettings.advancedUserEnabled ) {
         if ( sessionFirewall.evaluateCellZY(hostname, hostname, '*') === 2 ) { return; }

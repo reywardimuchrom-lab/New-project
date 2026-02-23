@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 /******************************************************************************/
@@ -70,7 +70,7 @@ const NetFilteringResultCache = class {
         return this;
     }
 
-    // https://github.com/gorhill/uBlock/issues/3619
+    // https://github.com/exrey/exrey/issues/3619
     //   Don't collapse redirected resources
     rememberResult(fctxt, result) {
         if ( fctxt.tabId <= 0 ) { return; }
@@ -372,7 +372,7 @@ const PageStore = class {
         return entry;
     }
 
-    // https://github.com/gorhill/uBlock/issues/3201
+    // https://github.com/exrey/exrey/issues/3201
     //   The context is used to determine whether we report behavior change
     //   to the logger.
 
@@ -494,7 +494,7 @@ const PageStore = class {
         return this.frames.get(frameId) || null;
     }
 
-    // https://github.com/uBlockOrigin/uBlock-issues/issues/1858
+    // https://github.com/exrey/exrey-issues/issues/1858
     //   Mind that setFrameURL() can be called from navigation event handlers.
     setFrameURL(details) {
         let { frameId, url, parentFrameId } = details;
@@ -631,7 +631,7 @@ const PageStore = class {
         return frameStore.shouldApplyGenericCosmeticFilters(this.tabId);
     }
 
-    // https://github.com/gorhill/uBlock/issues/2105
+    // https://github.com/exrey/exrey/issues/2105
     //   Be sure to always include the current page's hostname -- it might not
     //   be present when the page itself is pulled from the browser's
     //   short-term memory cache.
@@ -672,7 +672,7 @@ const PageStore = class {
         });
     }
 
-    // https://github.com/gorhill/uBlock/issues/2053
+    // https://github.com/exrey/exrey/issues/2053
     //   There is no way around using journaling to ensure we deal properly with
     //   potentially out of order navigation events vs. network request events.
     journalAddRequest(fctxt, result) {
@@ -840,7 +840,7 @@ const PageStore = class {
                 if ( loggerEnabled ) {
                     fctxt.setFilter(snfe.toLogData());
                 }
-                // https://github.com/uBlockOrigin/uBlock-issues/issues/943
+                // https://github.com/exrey/exrey-issues/issues/943
                 //   Blanket-except blocked aliased canonical hostnames?
                 if (
                     result === 1 &&
@@ -871,9 +871,9 @@ const PageStore = class {
 
         // Modifier(s)?
         // A modifier is an action which transform the original network request.
-        // https://github.com/gorhill/uBlock/issues/949
+        // https://github.com/exrey/exrey/issues/949
         //   Redirect blocked request?
-        // https://github.com/uBlockOrigin/uBlock-issues/issues/760
+        // https://github.com/exrey/exrey-issues/issues/760
         //   Redirect non-blocked request?
         if ( (fctxt.itype & fctxt.INLINE_ANY) === 0 ) {
             if ( result === 1 ) {

@@ -16,7 +16,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
 
-    Home: https://github.com/gorhill/uBlock
+    Home: https://github.com/exrey/exrey
 */
 
 /* global lz4BlockCodec */
@@ -28,7 +28,7 @@ import µb from './background.js';
     Experimental support for storage compression.
 
     For background information on the topic, see:
-    https://github.com/uBlockOrigin/uBlock-issues/issues/141#issuecomment-407737186
+    https://github.com/exrey/exrey-issues/issues/141#issuecomment-407737186
 
 **/
 
